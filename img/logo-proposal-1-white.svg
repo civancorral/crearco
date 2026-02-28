@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Propuesta 1 White: Monograma CC + Wordmark para fondos oscuros -->
+  <defs>
+    <linearGradient id="g1w" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ad4d0"/>
+      <stop offset="100%" style="stop-color:#10B981"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4, 4)">
+    <!-- Outer C (teal gradient) -->
+    <path d="M26 2C13.3 2 3 12.3 3 25s10.3 23 23 23c6.2 0 11.8-2.4 16-6.4"
+          stroke="url(#g1w)" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <!-- Inner C (white) -->
+    <path d="M34 14C30.7 10.7 26.1 8.5 21 8.5c-9.1 0-16.5 7.4-16.5 16.5S11.9 41.5 21 41.5"
+          stroke="rgba(255,255,255,0.8)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <!-- Accent dot -->
+    <circle cx="42" cy="18.5" r="3.5" fill="url(#g1w)"/>
+  </g>
+  <!-- Wordmark white -->
+  <text x="62" y="28" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="26" fill="white" letter-spacing="-0.5">Crear</text>
+  <text x="62" y="50" font-family="'Space Grotesk', 'Inter', sans-serif" font-weight="700" font-size="18" fill="#0ad4d0" letter-spacing="3">CO</text>
+  <line x1="62" y1="33" x2="110" y2="33" stroke="url(#g1w)" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

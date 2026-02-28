@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear-Co - Propuestas de Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #1e293b; }
+        .header { background: linear-gradient(135deg, #060a2e 0%, #0a1f6b 100%); padding: 3rem 2rem; text-align: center; }
+        .header h1 { font-family: 'Space Grotesk', sans-serif; color: white; font-size: 2rem; margin-bottom: 0.5rem; }
+        .header p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .proposal { background: white; border-radius: 1.5rem; padding: 2.5rem; margin-bottom: 2rem; border: 1px solid #e2e8f0; transition: box-shadow 0.3s; }
+        .proposal:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+        .proposal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+        .proposal-number { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 0.5rem; background: linear-gradient(135deg, #0a1f6b, #1a3fff); color: white; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 0.875rem; }
+        .proposal-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.25rem; margin-left: 0.75rem; }
+        .proposal-concept { color: #64748b; font-size: 0.8rem; font-style: italic; }
+        .logo-display { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .logo-bg { padding: 2.5rem; border-radius: 1rem; display: flex; align-items: center; justify-content: center; min-height: 140px; }
+        .logo-bg-light { background: #ffffff; border: 1px solid #e2e8f0; }
+        .logo-bg-dark { background: linear-gradient(135deg, #060a2e 0%, #0a1f6b 100%); }
+        .logo-bg img { max-width: 260px; height: auto; }
+        .bg-label { text-align: center; font-size: 0.7rem; color: #94a3b8; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.1em; }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .tag { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 999px; font-size: 0.7rem; font-weight: 600; }
+        .tag-concept { background: #eef4ff; color: #0a1f6b; }
+        .tag-style { background: #edfffe; color: #0aaba9; }
+        .description { color: #475569; font-size: 0.85rem; line-height: 1.7; margin-top: 1rem; }
+        .description strong { color: #0a1f6b; }
+
+        /* White versions of SVG for dark backgrounds */
+        .logo-bg-dark img { filter: brightness(0) invert(1); }
+        .logo-bg-dark .keep-colors { filter: none; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Propuestas de Logo - Crear-Co</h1>
+        <p>3 conceptos distintos para la identidad visual de la marca</p>
+    </div>
+
+    <div class="container">
+        <!-- Propuesta 1 -->
+        <div class="proposal">
+            <div class="proposal-header">
+                <div style="display:flex;align-items:center;">
+                    <span class="proposal-number">1</span>
+                    <span class="proposal-title">Monograma Geométrico "CC"</span>
+                </div>
+                <div class="tags">
+                    <span class="tag tag-concept">Protección</span>
+                    <span class="tag tag-style">Premium</span>
+                </div>
+            </div>
+            <p class="proposal-concept">"Dos C entrelazadas formando un escudo de protección financiera"</p>
+            <div class="logo-display">
+                <div>
+                    <div class="logo-bg logo-bg-light">
+                        <img src="img/logo-proposal-1.svg" alt="Logo propuesta 1 fondo claro">
+                    </div>
+                    <p class="bg-label">Fondo claro</p>
+                </div>
+                <div>
+                    <div class="logo-bg logo-bg-dark">
+                        <img class="keep-colors" src="img/logo-proposal-1-white.svg" alt="Logo propuesta 1 fondo oscuro">
+                    </div>
+                    <p class="bg-label">Fondo oscuro</p>
+                </div>
+            </div>
+            <div class="description">
+                <strong>Concepto:</strong> Dos letras "C" (Crear + Co) se entrelazan creando un símbolo de unión y protección. El gradiente teal representa crecimiento financiero, mientras el navy transmite confianza institucional. El punto de acento representa el punto de inflexión positivo en la vida financiera del cliente.
+            </div>
+        </div>
+
+        <!-- Propuesta 2 -->
+        <div class="proposal">
+            <div class="proposal-header">
+                <div style="display:flex;align-items:center;">
+                    <span class="proposal-number">2</span>
+                    <span class="proposal-title">Isotipo de Crecimiento</span>
+                </div>
+                <div class="tags">
+                    <span class="tag tag-concept">Crecimiento</span>
+                    <span class="tag tag-style">Fintech</span>
+                </div>
+            </div>
+            <p class="proposal-concept">"Una C que se transforma en flecha ascendente = crecimiento financiero"</p>
+            <div class="logo-display">
+                <div>
+                    <div class="logo-bg logo-bg-light">
+                        <img src="img/logo-proposal-2.svg" alt="Logo propuesta 2 fondo claro">
+                    </div>
+                    <p class="bg-label">Fondo claro</p>
+                </div>
+                <div>
+                    <div class="logo-bg logo-bg-dark">
+                        <img class="keep-colors" src="img/logo-proposal-2-white.svg" alt="Logo propuesta 2 fondo oscuro">
+                    </div>
+                    <p class="bg-label">Fondo oscuro</p>
+                </div>
+            </div>
+            <div class="description">
+                <strong>Concepto:</strong> La "C" dentro de un cuadrado redondeado (app-icon style) se abre hacia una flecha ascendente, simbolizando el crecimiento financiero que Crear-Co ofrece a sus clientes. El estilo es muy fintech/startup moderno. Funciona perfecto como favicon y como ícono de app.
+            </div>
+        </div>
+
+        <!-- Propuesta 3 -->
+        <div class="proposal">
+            <div class="proposal-header">
+                <div style="display:flex;align-items:center;">
+                    <span class="proposal-number">3</span>
+                    <span class="proposal-title">Escudo de Seguridad Social</span>
+                </div>
+                <div class="tags">
+                    <span class="tag tag-concept">Confianza</span>
+                    <span class="tag tag-style">Institucional</span>
+                </div>
+            </div>
+            <p class="proposal-concept">"Escudo con checkmark = seguridad social verificada y confiable"</p>
+            <div class="logo-display">
+                <div>
+                    <div class="logo-bg logo-bg-light">
+                        <img src="img/logo-proposal-3.svg" alt="Logo propuesta 3 fondo claro">
+                    </div>
+                    <p class="bg-label">Fondo claro</p>
+                </div>
+                <div>
+                    <div class="logo-bg logo-bg-dark">
+                        <img class="keep-colors" src="img/logo-proposal-3-white.svg" alt="Logo propuesta 3 fondo oscuro">
+                    </div>
+                    <p class="bg-label">Fondo oscuro</p>
+                </div>
+            </div>
+            <div class="description">
+                <strong>Concepto:</strong> Un escudo navy con checkmark teal comunica directamente "seguridad social verificada". El wordmark en mayúsculas con el tagline "SEGURIDAD SOCIAL" refuerza el posicionamiento. Es el más institucional y directo de los tres, ideal para transmitir autoridad y confianza inmediata.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

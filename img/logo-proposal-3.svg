@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" fill="none">
+  <!-- Propuesta 3: Wordmark tipográfico premium con acento de escudo -->
+  <!-- Concepto: Tipografía bold limpia con un escudo/checkmark integrado = seguridad y confianza -->
+  <defs>
+    <linearGradient id="g3a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ad4d0"/>
+      <stop offset="100%" style="stop-color:#10B981"/>
+    </linearGradient>
+    <linearGradient id="g3b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1f6b"/>
+      <stop offset="50%" style="stop-color:#0a1f6b"/>
+      <stop offset="100%" style="stop-color:#1a3fff"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield icon with checkmark -->
+  <g transform="translate(2, 3)">
+    <path d="M25 2L4 10v14c0 12.4 9 23.6 21 26 12-2.4 21-13.6 21-26V10L25 2z"
+          fill="url(#g3b)" opacity="0.95"/>
+    <path d="M25 6L8 12.5v11c0 10.2 7.4 19.4 17 21.5 9.6-2.1 17-11.3 17-21.5v-11L25 6z"
+          fill="none" stroke="url(#g3a)" stroke-width="1.5"/>
+    <!-- Checkmark inside shield -->
+    <path d="M16 24l6 6 12-12" stroke="#0ad4d0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Main wordmark -->
+  <text x="58" y="38" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="32" fill="#0a1f6b" letter-spacing="-1">CREAR</text>
+  <!-- Separator -->
+  <text x="189" y="38" font-family="'Space Grotesk', sans-serif" font-weight="300" font-size="32" fill="#0ad4d0" letter-spacing="-1">-</text>
+  <text x="203" y="38" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="32" fill="#0ad4d0" letter-spacing="-1">CO</text>
+  <!-- Tagline -->
+  <text x="58" y="52" font-family="'Inter', sans-serif" font-weight="400" font-size="9" fill="#9CA3AF" letter-spacing="3.5">SEGURIDAD SOCIAL</text>
+</svg>
