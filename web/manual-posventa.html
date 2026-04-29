@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual — Agente de Posventa | CrearcoCRM</title>
+    <link rel="stylesheet" href="manual-styles.css">
+</head>
+<body>
+<div class="manual">
+
+    <div class="manual-header">
+        <a href="manuales.html" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;">&larr; Volver al indice</a>
+        <div class="role-badge" style="margin-top:12px;background:#f97316;">Agente de Posventa</div>
+        <h1>Manual de Usuario — Agente de Posventa</h1>
+        <p class="subtitle">Seguimiento y atencion del proceso posventa</p>
+        <span class="version">v2.0 — Marzo 2026</span>
+    </div>
+
+    <div class="toc">
+        <h3>Contenido</h3>
+        <ol>
+            <li><a href="#login">Inicio de Sesion</a></li>
+            <li><a href="#menu">Tu Menu de Navegacion</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#clientes">Gestion de Clientes</a></li>
+            <li><a href="#seguimientos">Seguimientos — Tu herramienta principal</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#whatsapp">WhatsApp — Mensajes</a></li>
+            <li><a href="#notificaciones">Notificaciones</a></li>
+            <li><a href="#documentos">Documentos del Cliente</a></li>
+            <li><a href="#tramites">Tramites y Checklist</a></li>
+            <li><a href="#pwa">Notificaciones Push (PWA)</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#buenas-practicas">Buenas Practicas para Posventa</a></li>
+            <li><a href="#restricciones">Lo que NO puedes hacer</a></li>
+        </ol>
+    </div>
+
+    <div class="manual-content">
+
+        <!-- 1 -->
+        <div class="section" id="login">
+            <h2><span class="num">1</span> Inicio de Sesion</h2>
+            <div class="screenshot"><img src="screenshots/login.png" alt="Pantalla de inicio de sesión"><p class="caption">Pantalla de inicio de sesión</p></div>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abre tu navegador</h4><p>Ingresa a <strong>crearcocrm.socialmindcrm.com</strong></p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Ingresa tus credenciales</h4><p>Correo y contrasena proporcionados por tu administrador.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Listo</h4><p>Llegaras a tu Dashboard personal con tus clientes de posventa y pendientes.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="section" id="menu">
+            <h2><span class="num">2</span> Tu Menu de Navegacion</h2>
+            <div class="screenshot"><img src="screenshots/posventa-sidebar.png" alt="Menú lateral — Posventa"><p class="caption">Menú lateral — Posventa</p></div>
+
+
+            <div class="menu-preview">
+                <div class="menu-section">
+                    <div class="menu-section-label">Principal</div>
+                    <div class="menu-item active"><span class="dot"></span> Dashboard</div>
+                    <div class="menu-item"><span class="dot"></span> Clientes</div>
+                    <div class="menu-item"><span class="dot"></span> Citas</div>
+                    <div class="menu-item"><span class="dot"></span> Notificaciones</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">WhatsApp</div>
+                    <div class="menu-item"><span class="dot"></span> Mensajes</div>
+                </div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>Tu menu es enfocado en lo esencial: clientes, seguimientos, citas y WhatsApp. Las funciones administrativas las maneja tu Supervisor o Administrador.</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="section" id="dashboard">
+            <h2><span class="num">3</span> Dashboard</h2>
+            <div class="screenshot"><img src="screenshots/posventa-dashboard.png" alt="Dashboard personal — Posventa"><p class="caption">Dashboard personal — Posventa</p></div>
+
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Tu Dashboard muestra <strong>unicamente tus datos personales</strong> del area de <span class="badge orange">posventa</span>.</div>
+            </div>
+
+            <h3>Tus KPIs</h3>
+            <div class="ui-mockup">
+                <div class="mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">crearcocrm.socialmindcrm.com/dashboard</span></div>
+                <div class="mockup-main" style="padding:20px;">
+                    <div class="mock-title">Mi Dashboard — Posventa</div>
+                    <div class="mock-cards">
+                        <div class="mock-card"><div class="label">Mis clientes del mes</div><div class="value" style="color:#f97316;">15</div></div>
+                        <div class="mock-card"><div class="label">Mis expedientes</div><div class="value" style="color:#8b5cf6;">11</div></div>
+                        <div class="mock-card"><div class="label">Completados</div><div class="value" style="color:#22c55e;">7</div></div>
+                    </div>
+                    <div class="mock-table">
+                        <div class="mock-thead"><div class="mock-th">Seguimientos vencidos (atencion!)</div><div class="mock-th">Cliente</div><div class="mock-th">Etapa</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Vencido</div><div class="mock-td">Roberto Garcia</div><div class="mock-td">Obs. 30 dias</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Vencido</div><div class="mock-td">Ana Martinez</div><div class="mock-td">Revision vigencia</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="section" id="clientes">
+            <h2><span class="num">4</span> Gestion de Clientes</h2>
+            <div class="screenshot"><img src="screenshots/posventa-clientes.png" alt="Mis clientes — Posventa"><p class="caption">Mis clientes — Posventa</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Clientes</span></p>
+
+            <div class="info-box important">
+                <span class="icon">&#9888;</span>
+                <div>Solo ves <strong>tus propios clientes</strong> del area de <span class="badge orange">posventa</span>. Estos son clientes que ya firmaron y estan en proceso de seguimiento post-venta.</div>
+            </div>
+
+            <h3>Tus permisos</h3>
+            <table class="field-table">
+                <thead><tr><th>Accion</th><th>Permitido</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver tus clientes posventa</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Crear nuevos clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Editar tus clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Eliminar clientes</td><td><span class="badge red">No</span></td></tr>
+                    <tr><td>Exportar clientes</td><td><span class="badge red">No</span></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Campos clave para Posventa</h3>
+            <p>Como agente de posventa, estos campos son especialmente importantes para ti:</p>
+            <table class="field-table">
+                <thead><tr><th>Campo</th><th>Por que importa</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Expediente</strong></td><td>Indica si el expediente esta completo (SI/NO)</td></tr>
+                    <tr><td><strong>Solicitud</strong></td><td>Tipo de solicitud presentada (APP/Otro)</td></tr>
+                    <tr><td><strong>FUR</strong></td><td>Folio Unico de Registro — clave para dar seguimiento al tramite</td></tr>
+                    <tr><td><strong>CLABE interbancaria</strong></td><td>Cuenta donde se depositara al cliente</td></tr>
+                    <tr><td><strong>Revision vigencia IMSS</strong></td><td>Estado de la vigencia ante el IMSS</td></tr>
+                    <tr><td><strong>Fecha de firma</strong></td><td>Punto de inicio de todo el ciclo de seguimiento</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Manten estos campos actualizados. Son la base para dar un seguimiento efectivo y para que tu supervisor pueda ver el estado real de cada caso.</div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="section" id="seguimientos">
+            <h2><span class="num">5</span> Seguimientos — Tu herramienta principal</h2>
+
+            <div class="info-box important" style="background:#fff7ed;border-color:#fdba74;color:#9a3412;">
+                <span class="icon">&#11088;</span>
+                <div><strong>Los seguimientos son el corazon de tu trabajo en Posventa.</strong> Cada etapa asegura que ningun cliente quede sin atencion despues de haber firmado. Tu efectividad se mide por cuantos seguimientos completas a tiempo.</div>
+            </div>
+
+            <h3>Las 6 Etapas con contexto Posventa</h3>
+            <table class="field-table">
+                <thead><tr><th>Etapa</th><th>Dia</th><th>Que debes hacer en Posventa</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Primer contacto</strong></td><td>Dia 1</td><td>Confirmar que el cliente firmo, dar bienvenida, explicar siguiente pasos del tramite</td></tr>
+                    <tr><td><strong>Observacion 15 dias</strong></td><td>Dia 15</td><td>Revisar estado de documentos, verificar si hay problemas con el expediente</td></tr>
+                    <tr><td><strong>Observacion 30 dias</strong></td><td>Dia 30</td><td>Seguimiento de avance del proceso, actualizar estado del tramite</td></tr>
+                    <tr><td><strong>Simulacion / Solicitud</strong></td><td>Dia 45</td><td>Verificar que la simulacion o solicitud fue enviada correctamente</td></tr>
+                    <tr><td><strong>Revision vigencia</strong></td><td>Dia 60</td><td>Revisar vigencia IMSS, confirmar que el proceso avanza correctamente</td></tr>
+                    <tr><td><strong>Finalizacion</strong></td><td>Dia 90</td><td>Cerrar el ciclo: confirmar resolucion, deposito o pago completado</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Como completar un seguimiento</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Ir al detalle del cliente</h4><p>Click en el nombre del cliente.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Click en "Seguimiento"</h4><p>Boton verde en la parte superior.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Escribe observaciones detalladas</h4><p>Ejemplo: "Se contacto al cliente. Expediente completo. Solicitud enviada via APP. Pendiente respuesta de AFORE."</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Marca como completado</h4><p>Se registra automaticamente tu nombre y la fecha.</p></div></div>
+            </div>
+
+            <h3>Colores — Significado</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Pendiente (gris)</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#fef2f2;color:#ef4444;">Vencido (rojo)</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completado (verde)</span>
+            </div>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div><strong>Seguimientos en ROJO = cliente desatendido.</strong> En posventa esto es critico: un cliente que firmo y no recibe seguimiento pierde confianza y puede generar quejas. Atende los rojos PRIMERO cada dia.</div>
+            </div>
+
+            <h3>Barra de Progreso</h3>
+            <div style="max-width:400px;">
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);"><span>33% — 2 de 6 etapas</span></div>
+                <div class="progress-bar"><div class="fill yellow" style="width:33%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>83% — 5 de 6 etapas</span></div>
+                <div class="progress-bar"><div class="fill green" style="width:83%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>100% — Ciclo completo</span></div>
+                <div class="progress-bar"><div class="fill green" style="width:100%"></div></div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="section" id="citas">
+            <h2><span class="num">6</span> Citas</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Citas</span></p>
+
+            <h3>Tipos comunes en Posventa</h3>
+            <p><span class="badge purple">Entrega documentos</span> (muy frecuente) &nbsp; <span class="badge orange">Llamada</span> &nbsp; <span class="badge teal">Visita</span></p>
+
+            <p>Crear cita: desde la seccion Citas o desde el detalle del cliente con el boton <span class="badge teal">Agendar Cita</span>. Configura tipo, fecha, hora, duracion y recordatorio.</p>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completada</span>
+                <span class="arrow-right"> / </span>
+                <span class="status" style="background:#fee2e2;color:#991b1b;">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="section" id="whatsapp">
+            <h2><span class="num">7</span> WhatsApp — Mensajes</h2>
+            <div class="screenshot"><img src="screenshots/posventa-whatsapp-inbox.png" alt="Bandeja de WhatsApp"><p class="caption">Bandeja de WhatsApp</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Mensajes</span></p>
+
+            <h3>Pestanas</h3>
+            <p><strong>Mis chats</strong> — Tus conversaciones asignadas. <strong>Sin asignar</strong> — Nuevas conversaciones que puedes tomar.</p>
+
+            <h3>WhatsApp en Posventa</h3>
+            <p>WhatsApp es clave para el seguimiento posventa. Usalo para:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Informar al cliente sobre el avance de su tramite</li>
+                <li>Solicitar documentos pendientes</li>
+                <li>Enviar recordatorios de citas de entrega</li>
+                <li>Resolver dudas de forma rapida</li>
+            </ul>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Se proactivo: no esperes a que el cliente pregunte. Enviale actualizaciones sobre su tramite antes de que el pregunte. Eso genera confianza.</div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>No puedes transferir conversaciones. Si necesitas hacerlo, pidelo a tu Supervisor.</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="section" id="notificaciones">
+            <h2><span class="num">8</span> Notificaciones</h2>
+            <p>Alertas de seguimientos proximos/vencidos y recordatorios de citas.</p>
+        </div>
+
+        <!-- 9. DOCUMENTOS -->
+        <div class="section" id="documentos">
+            <h2><span class="num">9</span> Documentos del Cliente</h2>
+            <p class="nav-path">Detalle del Cliente <span class="arrow">&rarr;</span> <span class="current">Documentos</span></p>
+
+            <p>Sube documentos directamente desde el detalle del cliente: <strong>JPG, PNG, PDF, DOC/DOCX</strong> (maximo 10 MB).</p>
+
+            <h3>Documentos sensibles</h3>
+            <p>Los documentos sensibles (<span class="badge red">CURP</span> <span class="badge red">NSS</span> <span class="badge red">INE</span> <span class="badge red">AFORE</span> <span class="badge red">CLABE</span> <span class="badge red">Estado de cuenta</span>) requieren autorizacion del supervisor para descargar.</p>
+
+            <h3>Solicitar descarga</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Solicitar Descarga"</h4><p>Junto al documento sensible.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Escribe el motivo</h4><p>Indica por que necesitas el documento.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Espera aprobacion</h4><p>Tu supervisor revisara la solicitud.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Descarga en 24h</h4><p>Una vez aprobada, tienes 24 horas para descargar.</p></div></div>
+            </div>
+
+            <div class="info-box tip" style="background:#fff7ed;border-color:#fdba74;">
+                <span class="icon">&#128161;</span>
+                <div>En posventa, la gestion de documentos es critica. <strong>Sube los documentos del expediente tan pronto como los recibas.</strong> Un expediente completo agiliza todo el proceso.</div>
+            </div>
+        </div>
+
+        <!-- 10. TRAMITES -->
+        <div class="section" id="tramites">
+            <h2><span class="num">10</span> Tramites y Checklist</h2>
+
+            <p>Cada cliente puede tener tramites formales (pension, retiro, etc.) con etapas y un <strong>checklist de documentos</strong> requeridos.</p>
+
+            <h3>Tu trabajo con tramites</h3>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li><strong>Avanzar etapas:</strong> conforme el proceso avanza, mueve el tramite a la siguiente etapa</li>
+                <li><strong>Checklist:</strong> marca los documentos conforme se suben al sistema</li>
+                <li><strong>Notificacion automatica:</strong> al avanzar etapa, el cliente recibe WhatsApp informandole</li>
+            </ul>
+
+            <h3>Tramites detenidos</h3>
+            <p>Si un tramite no avanza en <strong>3 o mas dias</strong>, recibiras una alerta automatica. Tu supervisor tambien es notificado.</p>
+
+            <div class="info-box important" style="background:#fff7ed;border-color:#fdba74;color:#9a3412;">
+                <span class="icon">&#9888;</span>
+                <div><strong>Avanzar las etapas de los tramites es el corazon del trabajo en posventa.</strong> Manten los tramites en movimiento para evitar alertas de tramites detenidos y garantizar la satisfaccion del cliente.</div>
+            </div>
+        </div>
+
+        <!-- 11. PWA -->
+        <div class="section" id="pwa">
+            <h2><span class="num">11</span> Notificaciones Push (PWA)</h2>
+
+            <p>Instala CrearcoCRM como aplicacion en tu celular para recibir <strong>notificaciones push</strong> de nuevos mensajes de WhatsApp.</p>
+
+            <h3>Como instalar</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Chrome en tu celular</h4><p>Abre <strong>crearcocrm.socialmindcrm.com</strong>.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Instalar</h4><p>Menu (tres puntos) &rarr; <strong>"Instalar aplicacion"</strong> o <strong>"Agregar a pantalla de inicio"</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Permitir notificaciones</h4><p>Acepta el permiso cuando aparezca.</p></div></div>
+            </div>
+
+            <p>Las notificaciones funcionan <strong>incluso con el navegador cerrado</strong>. Esencial para agentes de guardia.</p>
+        </div>
+
+        <!-- 12 -->
+        <div class="section" id="perfil">
+            <h2><span class="num">12</span> Perfil</h2>
+            <p>Menu superior derecho &rarr; tu nombre. Actualiza nombre, correo y contrasena.</p>
+        </div>
+
+        <!-- 13 -->
+        <div class="section" id="buenas-practicas">
+            <h2><span class="num">13</span> Buenas Practicas para Posventa</h2>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Revisa seguimientos vencidos PRIMERO cada manana</h4><p>Tu Dashboard los muestra al entrar. Es lo primero que debes atender.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Manten campos del expediente actualizados</h4><p>Expediente, Solicitud, FUR, CLABE, Revision IMSS — esta informacion es vital.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Usa WhatsApp proactivamente</h4><p>No esperes a que el cliente te busque. Enviale actualizaciones de su tramite.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Escribe observaciones con detalle</h4><p>Las observaciones son el historial del caso. Si otro agente toma tu cliente, debe entender todo con solo leerlas.</p></div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Actualiza el estatus del cliente</h4><p>Cuando un tramite se completa, cambia el estatus a "completado". Cuando se cancela, registra el motivo.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="section" id="restricciones">
+            <h2><span class="num">14</span> Lo que NO puedes hacer</h2>
+            <table class="field-table">
+                <thead><tr><th>Funcion restringida</th><th>Quien la tiene</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver clientes de otros agentes</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Eliminar clientes</td><td>Administrador</td></tr>
+                    <tr><td>Exportar datos</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Ver reportes y metas</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Transferir conversaciones WhatsApp</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Configurar WhatsApp</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Envio masivo</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Administrar usuarios</td><td>Administrador</td></tr>
+                    <tr><td>Gestionar catalogos</td><td>Administrador</td></tr>
+                    <tr><td>Importar datos</td><td>Administrador</td></tr>
+                    <tr><td>Descargar documentos sensibles sin autorizacion</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Gestionar apoyo entre sucursales</td><td>Supervisor</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="manual-footer">
+        <span>CrearcoCRM v2.0 — SocialMind CRM</span>
+        <span>Marzo 2026</span>
+    </div>
+
+</div>
+</body>
+</html>

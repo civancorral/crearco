@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual — Supervisor | CrearcoCRM</title>
+    <link rel="stylesheet" href="manual-styles.css">
+</head>
+<body>
+<div class="manual">
+
+    <div class="manual-header">
+        <a href="manuales.html" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;">&larr; Volver al indice</a>
+        <div class="role-badge" style="margin-top:12px;background:#8b5cf6;">Supervisor</div>
+        <h1>Manual de Usuario — Supervisor</h1>
+        <p class="subtitle">Supervision y gestion a nivel de sucursal</p>
+        <span class="version">v2.0 — Marzo 2026</span>
+    </div>
+
+    <div class="toc">
+        <h3>Contenido</h3>
+        <ol>
+            <li><a href="#login">Inicio de Sesion</a></li>
+            <li><a href="#menu">Menu de Navegacion</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#clientes">Gestion de Clientes</a></li>
+            <li><a href="#seguimientos">Seguimientos</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#wa-inbox">WhatsApp — Mensajes</a></li>
+            <li><a href="#wa-admin">WhatsApp — Administracion</a></li>
+            <li><a href="#reportes">Reportes</a></li>
+            <li><a href="#metas">Metas</a></li>
+            <li><a href="#documentos">Documentos y Solicitudes de Descarga</a></li>
+            <li><a href="#tramites">Tramites</a></li>
+            <li><a href="#apoyo">Apoyo entre Sucursales</a></li>
+            <li><a href="#pwa">Notificaciones Push (PWA)</a></li>
+            <li><a href="#automatizaciones">Automatizaciones</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#diferencias">Diferencias con Administrador</a></li>
+        </ol>
+    </div>
+
+    <div class="manual-content">
+
+        <!-- 1 -->
+        <div class="section" id="login">
+            <h2><span class="num">1</span> Inicio de Sesion</h2>
+            <div class="screenshot"><img src="screenshots/login.png" alt="Pantalla de inicio de sesión"><p class="caption">Pantalla de inicio de sesión</p></div>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Ingrese a crearcocrm.socialmindcrm.com</h4><p>Desde cualquier navegador en computadora, tablet o celular.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Escriba sus credenciales</h4><p>Correo electronico y contrasena proporcionados por el Administrador.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Acceda al Dashboard</h4><p>Sera redirigido al Dashboard con datos de su sucursal.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="section" id="menu">
+            <h2><span class="num">2</span> Menu de Navegacion</h2>
+            <div class="screenshot"><img src="screenshots/supervisor-sidebar.png" alt="Menú lateral del Supervisor"><p class="caption">Menú lateral del Supervisor</p></div>
+
+            <p>Como Supervisor, tienes acceso a la mayoria de las secciones, <strong>excepto Catalogos y Administracion de usuarios</strong>.</p>
+
+            <div class="menu-preview">
+                <div class="menu-section">
+                    <div class="menu-section-label">Principal</div>
+                    <div class="menu-item active"><span class="dot"></span> Dashboard</div>
+                    <div class="menu-item"><span class="dot"></span> Clientes</div>
+                    <div class="menu-item"><span class="dot"></span> Citas</div>
+                    <div class="menu-item"><span class="dot"></span> Notificaciones</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">WhatsApp</div>
+                    <div class="menu-item"><span class="dot"></span> Mensajes</div>
+                    <div class="menu-item"><span class="dot"></span> Dashboard WA</div>
+                    <div class="menu-item"><span class="dot"></span> Sesiones WA</div>
+                    <div class="menu-item"><span class="dot"></span> Plantillas</div>
+                    <div class="menu-item"><span class="dot"></span> Envio Masivo</div>
+                    <div class="menu-item"><span class="dot"></span> Config WA</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">Reportes</div>
+                    <div class="menu-item"><span class="dot"></span> Reportes</div>
+                    <div class="menu-item"><span class="dot"></span> Metas</div>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>No veras las secciones <strong>Catalogos</strong> (Sucursales, AFOREs, Causas, Bancos) ni <strong>Administrar</strong> (Usuarios, Importar). Estas son exclusivas del Administrador.</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="section" id="dashboard">
+            <h2><span class="num">3</span> Dashboard</h2>
+            <div class="screenshot"><img src="screenshots/supervisor-dashboard.png" alt="Dashboard del Supervisor"><p class="caption">Dashboard del Supervisor</p></div>
+
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Como Supervisor, el Dashboard muestra <strong>unicamente datos de tu sucursal</strong>. No veras informacion de otras sucursales.</div>
+            </div>
+
+            <h3>Lo que ves</h3>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li><strong>KPIs de tu sucursal:</strong> Clientes del mes, Expedientes, Completados, Total historico</li>
+                <li><strong>Graficas:</strong> Clientes por mes y distribucion por AFORE de tu sucursal</li>
+                <li><strong>Seguimientos vencidos:</strong> De todos los agentes de tu sucursal</li>
+                <li><strong>Citas de hoy:</strong> De todos los agentes de tu sucursal</li>
+            </ul>
+
+            <div class="ui-mockup">
+                <div class="mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">crearcocrm.socialmindcrm.com/dashboard</span></div>
+                <div class="mockup-main" style="padding:20px;">
+                    <div class="mock-title">Dashboard — Sucursal Centro</div>
+                    <div class="mock-cards">
+                        <div class="mock-card"><div class="label">Clientes del mes</div><div class="value" style="color:#3b82f6;">12</div></div>
+                        <div class="mock-card"><div class="label">Expedientes</div><div class="value" style="color:#8b5cf6;">9</div></div>
+                        <div class="mock-card"><div class="label">Completados</div><div class="value" style="color:#22c55e;">6</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="section" id="clientes">
+            <h2><span class="num">4</span> Gestion de Clientes</h2>
+            <div class="screenshot"><img src="screenshots/supervisor-clientes.png" alt="Lista de clientes"><p class="caption">Lista de clientes</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Clientes</span></p>
+
+            <h3>Tus permisos</h3>
+            <table class="field-table">
+                <thead><tr><th>Accion</th><th>Permitido</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver todos los clientes de tu sucursal</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Crear clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Editar clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Exportar clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Eliminar clientes</td><td><span class="badge red">No</span> — Solo Administrador</td></tr>
+                </tbody>
+            </table>
+
+            <p>Puedes ver y gestionar los clientes de <strong>todos los agentes de tu sucursal</strong>, no solo los tuyos. Esto te permite supervisar el trabajo de tu equipo.</p>
+
+            <h3>Crear un cliente</h3>
+            <p>Mismo proceso que el Administrador: click en "Nuevo Cliente", llenar las secciones de Informacion Personal, Tramite, Expediente y Observaciones. Todos los campos requeridos son: Nombre, Area, Agente, Sucursal y AFORE.</p>
+
+            <h3>Detalle del cliente</h3>
+            <p>Vista completa con informacion, barra de progreso y las 6 etapas de seguimiento. Botones disponibles: <span class="badge yellow">Editar</span> <span class="badge green">Seguimiento</span> <span class="badge teal">Agendar Cita</span> <span class="badge green">WhatsApp</span></p>
+        </div>
+
+        <!-- 5 -->
+        <div class="section" id="seguimientos">
+            <h2><span class="num">5</span> Seguimientos</h2>
+            <p>Puedes ver y completar seguimientos de <strong>cualquier agente de tu sucursal</strong>.</p>
+
+            <h3>Las 6 Etapas</h3>
+            <table class="field-table">
+                <thead><tr><th>Etapa</th><th>Dia</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Primer contacto</td><td>Dia 1</td><td>Contacto inicial despues de firma</td></tr>
+                    <tr><td>Observacion 15 dias</td><td>Dia 15</td><td>Primer seguimiento</td></tr>
+                    <tr><td>Observacion 30 dias</td><td>Dia 30</td><td>Segundo seguimiento</td></tr>
+                    <tr><td>Simulacion / Solicitud</td><td>Dia 45</td><td>Verificar solicitud</td></tr>
+                    <tr><td>Revision vigencia</td><td>Dia 60</td><td>Revisar vigencia IMSS</td></tr>
+                    <tr><td>Finalizacion</td><td>Dia 90</td><td>Cierre del ciclo</td></tr>
+                </tbody>
+            </table>
+
+            <p>Colores: <span class="badge green">Verde</span> = Completado &nbsp; <span class="badge red">Rojo</span> = Vencido &nbsp; <span class="badge gray">Gris</span> = Pendiente</p>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Revisa los seguimientos vencidos del Dashboard diariamente. Si un agente tiene muchos vencidos, habla con el para identificar el problema.</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="section" id="citas">
+            <h2><span class="num">6</span> Citas</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Citas</span></p>
+            <p>Ves <strong>todas las citas de tu sucursal</strong>. Puedes crear, editar y gestionar citas para cualquier agente de tu equipo.</p>
+
+            <h3>Tipos de Cita</h3>
+            <p><span class="badge blue">Firma</span> <span class="badge purple">Entrega documentos</span> <span class="badge teal">Visita</span> <span class="badge orange">Llamada</span> <span class="badge gray">Otro</span></p>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completada</span>
+                <span class="arrow-right"> / </span>
+                <span class="status" style="background:#fee2e2;color:#991b1b;">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="section" id="wa-inbox">
+            <h2><span class="num">7</span> WhatsApp — Mensajes</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Mensajes</span></p>
+
+            <h3>Pestanas</h3>
+            <p><strong>Mis chats</strong> — Tus conversaciones. <strong>Sin asignar</strong> — En cola. <strong>Todos</strong> — Todas las conversaciones.</p>
+
+            <h3>Acciones de Supervisor</h3>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Enviar mensajes en cualquier conversacion</li>
+                <li><strong>Asignar</strong> conversaciones sin agente a un agente especifico</li>
+                <li><strong>Transferir</strong> conversaciones entre agentes o departamentos</li>
+                <li>Filtrar por etiquetas y estados</li>
+                <li>Ver historial completo de mensajes</li>
+            </ul>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Las transferencias se registran en un log. Puedes ver quien transfirio cada conversacion y cuando.</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="section" id="wa-admin">
+            <h2><span class="num">8</span> WhatsApp — Administracion</h2>
+            <p>Como Supervisor tienes acceso completo a la administracion de WhatsApp:</p>
+
+            <h3>Dashboard WA</h3>
+            <p>Analiticas de mensajeria: total enviados/recibidos, tiempos de respuesta, rendimiento por agente.</p>
+
+            <h3>Sesiones</h3>
+            <p>Crea sesiones para agentes, genera codigos QR, monitorea estados de conexion.</p>
+
+            <h3>Plantillas</h3>
+            <p>Crea y edita mensajes predefinidos para respuestas rapidas de los agentes.</p>
+
+            <h3>Envio Masivo</h3>
+            <p>Envia mensajes a multiples clientes simultaneamente.</p>
+
+            <h3>Configuracion</h3>
+            <p>Configura el chatbot (mensajes automaticos, menu de opciones), horarios de atencion, y etiquetas para organizar conversaciones.</p>
+        </div>
+
+        <!-- 9 -->
+        <div class="section" id="reportes">
+            <h2><span class="num">9</span> Reportes</h2>
+            <div class="screenshot"><img src="screenshots/supervisor-reportes.png" alt="Módulo de reportes"><p class="caption">Módulo de reportes</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Reportes <span class="arrow">&rarr;</span> <span class="current">Reportes</span></p>
+
+            <h3>Tipos de Reporte</h3>
+            <table class="field-table">
+                <thead><tr><th>Reporte</th><th>Contenido</th><th>Exportar</th></tr></thead>
+                <tbody>
+                    <tr><td>Por Agentes</td><td>Rendimiento individual de cada agente de tu sucursal</td><td>PDF / Excel</td></tr>
+                    <tr><td>Por Sucursales</td><td>Metricas consolidadas de tu sucursal</td><td>PDF / Excel</td></tr>
+                    <tr><td>Por AFOREs</td><td>Distribucion de clientes por AFORE</td><td>PDF / Excel</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>Los reportes estan filtrados a tu sucursal. No veras datos de otras sucursales.</div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="section" id="metas">
+            <h2><span class="num">10</span> Metas</h2>
+            <div class="screenshot"><img src="screenshots/supervisor-metas.png" alt="Gestión de metas"><p class="caption">Gestión de metas</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Reportes <span class="arrow">&rarr;</span> <span class="current">Metas</span></p>
+
+            <p>Crea metas mensuales para cada agente o para toda tu sucursal. Define targets de clientes y expedientes.</p>
+
+            <h3>Semaforo</h3>
+            <p><span class="badge red">Rojo</span> Menos de 50% &nbsp; <span class="badge yellow">Amarillo</span> 50-80% &nbsp; <span class="badge green">Verde</span> 80% o mas</p>
+
+            <div style="max-width:300px;margin:12px 0;">
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);"><span>Agente Lopez</span><span>75%</span></div>
+                <div class="progress-bar"><div class="fill yellow" style="width:75%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>Agente Garcia</span><span>92%</span></div>
+                <div class="progress-bar"><div class="fill green" style="width:92%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>Agente Ruiz</span><span>35%</span></div>
+                <div class="progress-bar"><div class="fill red" style="width:35%"></div></div>
+            </div>
+        </div>
+
+        <!-- 11. DOCUMENTOS -->
+        <div class="section" id="documentos">
+            <h2><span class="num">11</span> Documentos y Solicitudes de Descarga</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Solicitudes de Descarga</span></p>
+
+            <p>Puedes subir documentos por cliente (JPG, PNG, PDF, DOC/DOCX, max 10 MB). Como Supervisor, descargas documentos sensibles directamente.</p>
+
+            <h3>Tipos de documento sensible</h3>
+            <p><span class="badge red">CURP</span> <span class="badge red">NSS</span> <span class="badge red">INE</span> <span class="badge red">AFORE</span> <span class="badge red">CLABE</span> <span class="badge red">Estado de cuenta</span></p>
+
+            <h3>Solicitudes de tus agentes</h3>
+            <p>Cuando un agente necesita descargar un documento sensible, te envia una solicitud. La encuentras en <strong>Solicitudes de Descarga</strong>.</p>
+
+            <table class="field-table">
+                <thead><tr><th>Columna</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Documento</td><td>Tipo y nombre del archivo</td></tr>
+                    <tr><td>Solicitado por</td><td>Agente que solicita</td></tr>
+                    <tr><td>Motivo</td><td>Razon proporcionada por el agente</td></tr>
+                    <tr><td>Fecha</td><td>Cuando se hizo la solicitud</td></tr>
+                    <tr><td>Acciones</td><td><span class="badge green">Aprobar</span> o <span class="badge red">Rechazar</span> (con motivo)</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box note">
+                <span class="icon">&#128274;</span>
+                <div>Las descargas aprobadas son validas por <strong>24 horas</strong>. Todas las acciones quedan registradas en la bitacora de auditoria.</div>
+            </div>
+        </div>
+
+        <!-- 12. TRAMITES -->
+        <div class="section" id="tramites">
+            <h2><span class="num">12</span> Tramites</h2>
+
+            <p>Los tramites representan procedimientos formales por cliente. Cada uno tiene etapas y un checklist de documentos requeridos.</p>
+
+            <h3>Supervision de tramites</h3>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Ves todos los tramites de los agentes de tu sucursal</li>
+                <li>Puedes avanzar etapas y vincular documentos al checklist</li>
+                <li>Al avanzar una etapa, el cliente recibe notificacion por WhatsApp</li>
+            </ul>
+
+            <h3>Tramites detenidos</h3>
+            <p>Cada dia a las 8:00 AM, el sistema detecta tramites sin movimiento por mas de 3 dias. Recibes un <strong>resumen consolidado</strong> de tu sucursal con los tramites detenidos y el agente responsable.</p>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Los tramites detenidos son una senal de alerta. Da seguimiento con el agente responsable para desbloquear el proceso.</div>
+            </div>
+        </div>
+
+        <!-- 13. APOYO -->
+        <div class="section" id="apoyo">
+            <h2><span class="num">13</span> Apoyo entre Sucursales</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Apoyo Sucursales</span></p>
+
+            <p>Solicita refuerzos temporales de otra sucursal o recibe solicitudes de apoyo.</p>
+
+            <h3>Crear solicitud de apoyo</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Nueva Solicitud"</h4><p>Indica: sucursal destino, departamento, numero de agentes, motivo y fechas.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Esperar aprobacion</h4><p>La sucursal destino aprueba o rechaza tu solicitud.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Agentes asignados</h4><p>La sucursal destino asigna agentes. Ellos pueden ver tus conversaciones.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Completar</h4><p>Al finalizar el apoyo, marca la solicitud como completada.</p></div></div>
+            </div>
+
+            <h3>Recibir solicitudes</h3>
+            <p>Si otra sucursal solicita apoyo de tu equipo, veras la solicitud pendiente. Puedes aprobar, rechazar, y asignar agentes de tu sucursal.</p>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dbeafe;color:#1e40af;">Aprobada</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Activa</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Completada</span>
+            </div>
+        </div>
+
+        <!-- 14. PWA -->
+        <div class="section" id="pwa">
+            <h2><span class="num">14</span> Notificaciones Push (PWA)</h2>
+
+            <p>CrearcoCRM se puede instalar como aplicacion en tu celular para recibir notificaciones push.</p>
+
+            <h3>Como instalar</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abrir en Chrome</h4><p>Ingresa a <strong>crearcocrm.socialmindcrm.com</strong> desde Chrome.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Instalar</h4><p>Menu (tres puntos) &rarr; <strong>"Instalar aplicacion"</strong> o <strong>"Agregar a pantalla de inicio"</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Permitir notificaciones</h4><p>Acepta el permiso cuando el navegador lo solicite.</p></div></div>
+            </div>
+
+            <p>Recibiras notificaciones push por cada nuevo mensaje de WhatsApp. Funcionan <strong>incluso con el navegador cerrado</strong>.</p>
+        </div>
+
+        <!-- 15. AUTOMATIZACIONES -->
+        <div class="section" id="automatizaciones">
+            <h2><span class="num">15</span> Automatizaciones</h2>
+
+            <table class="field-table">
+                <thead><tr><th>Automatizacion</th><th>Que hace</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Reasignacion al desactivar</strong></td><td>Si desactivas un agente, sus clientes activos se te reasignan automaticamente a ti (supervisor).</td></tr>
+                    <tr><td><strong>Recordatorios cobranza</strong></td><td>WhatsApp automatico a clientes con pagos proximos (3, 7, 15 dias antes).</td></tr>
+                    <tr><td><strong>Abonos vencidos</strong></td><td>Diario a las 6:00 AM, marca como "vencido" abonos que pasaron su fecha.</td></tr>
+                    <tr><td><strong>Tramites detenidos</strong></td><td>Diario a las 8:00 AM, alerta de tramites sin avance por 3+ dias.</td></tr>
+                    <tr><td><strong>Avance de etapa</strong></td><td>WhatsApp al cliente al avanzar etapa de tramite.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 16 -->
+        <div class="section" id="perfil">
+            <h2><span class="num">16</span> Perfil</h2>
+            <p>Menu superior derecho &rarr; click en tu nombre. Actualiza: nombre, correo y contrasena.</p>
+        </div>
+
+        <!-- 17 -->
+        <div class="section" id="diferencias">
+            <h2><span class="num">17</span> Diferencias con Administrador</h2>
+
+            <table class="field-table">
+                <thead><tr><th>Funcion</th><th>Supervisor</th><th>Administrador</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver datos</td><td>Solo su sucursal</td><td>Todas las sucursales</td></tr>
+                    <tr><td>Crear clientes</td><td><span class="badge green">Si</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Editar clientes</td><td><span class="badge green">Si</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Eliminar clientes</td><td><span class="badge red">No</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Exportar clientes</td><td><span class="badge green">Si</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Reportes y Metas</td><td><span class="badge green">Si</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>WhatsApp completo</td><td><span class="badge green">Si</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Crear/editar usuarios</td><td><span class="badge red">No</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Gestionar catalogos</td><td><span class="badge red">No</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Importar datos</td><td><span class="badge red">No</span></td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Apoyo entre sucursales</td><td>Solo su sucursal</td><td>Todas las sucursales</td></tr>
+                    <tr><td>Chatbot precalificacion</td><td>Solo lectura</td><td>Configura flujo completo</td></tr>
+                    <tr><td>Solicitudes descarga</td><td>De su sucursal/depto</td><td>De todo el sistema</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="manual-footer">
+        <span>CrearcoCRM v2.0 — SocialMind CRM</span>
+        <span>Marzo 2026</span>
+    </div>
+
+</div>
+</body>
+</html>

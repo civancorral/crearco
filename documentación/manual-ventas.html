@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual — Agente de Ventas | CrearcoCRM</title>
+    <link rel="stylesheet" href="manual-styles.css">
+</head>
+<body>
+<div class="manual">
+
+    <div class="manual-header">
+        <a href="manuales.html" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;">&larr; Volver al indice</a>
+        <div class="role-badge" style="margin-top:12px;">Agente de Ventas</div>
+        <h1>Manual de Usuario — Agente de Ventas</h1>
+        <p class="subtitle">Gestion de clientes y seguimiento del proceso de ventas</p>
+        <span class="version">v2.0 — Marzo 2026</span>
+    </div>
+
+    <div class="toc">
+        <h3>Contenido</h3>
+        <ol>
+            <li><a href="#login">Inicio de Sesion</a></li>
+            <li><a href="#menu">Tu Menu de Navegacion</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#clientes">Gestion de Clientes</a></li>
+            <li><a href="#seguimientos">Seguimientos</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#whatsapp">WhatsApp — Mensajes</a></li>
+            <li><a href="#notificaciones">Notificaciones</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#tramites">Tramites</a></li>
+            <li><a href="#pwa">Notificaciones Push (PWA)</a></li>
+            <li><a href="#chatbot">Chatbot y Precalificacion</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#buenas-practicas">Buenas Practicas</a></li>
+            <li><a href="#restricciones">Lo que NO puedes hacer</a></li>
+        </ol>
+    </div>
+
+    <div class="manual-content">
+
+        <!-- 1 -->
+        <div class="section" id="login">
+            <h2><span class="num">1</span> Inicio de Sesion</h2>
+            <div class="screenshot"><img src="screenshots/login.png" alt="Pantalla de inicio de sesión"><p class="caption">Pantalla de inicio de sesión</p></div>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abre tu navegador</h4><p>Ingresa a <strong>crearcocrm.socialmindcrm.com</strong></p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Ingresa tus credenciales</h4><p>Correo y contrasena proporcionados por tu administrador.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Listo</h4><p>Llegaras a tu Dashboard personal con tus clientes y pendientes del dia.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="section" id="menu">
+            <h2><span class="num">2</span> Tu Menu de Navegacion</h2>
+            <div class="screenshot"><img src="screenshots/ventas-sidebar.png" alt="Menú lateral — Ventas"><p class="caption">Menú lateral — Ventas</p></div>
+
+            <p>Como Agente de Ventas, tu menu es sencillo y enfocado en lo que necesitas:</p>
+
+            <div class="menu-preview">
+                <div class="menu-section">
+                    <div class="menu-section-label">Principal</div>
+                    <div class="menu-item active"><span class="dot"></span> Dashboard</div>
+                    <div class="menu-item"><span class="dot"></span> Clientes</div>
+                    <div class="menu-item"><span class="dot"></span> Citas</div>
+                    <div class="menu-item"><span class="dot"></span> Notificaciones</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">WhatsApp</div>
+                    <div class="menu-item"><span class="dot"></span> Mensajes</div>
+                </div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>Solo ves estas secciones. Las funciones de reportes, metas, catalogos, configuracion de WhatsApp y administracion de usuarios son gestionadas por tu Supervisor o Administrador.</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="section" id="dashboard">
+            <h2><span class="num">3</span> Dashboard</h2>
+            <div class="screenshot"><img src="screenshots/ventas-dashboard.png" alt="Dashboard personal — Ventas"><p class="caption">Dashboard personal — Ventas</p></div>
+
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Tu Dashboard muestra <strong>unicamente tus datos personales</strong> del area de <span class="badge purple">ventas</span>. No veras datos de otros agentes.</div>
+            </div>
+
+            <h3>Lo que ves</h3>
+            <div class="ui-mockup">
+                <div class="mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">crearcocrm.socialmindcrm.com/dashboard</span></div>
+                <div class="mockup-main" style="padding:20px;">
+                    <div class="mock-title">Mi Dashboard — Ventas</div>
+                    <div class="mock-cards">
+                        <div class="mock-card"><div class="label">Mis clientes del mes</div><div class="value" style="color:#3b82f6;">8</div></div>
+                        <div class="mock-card"><div class="label">Mis expedientes</div><div class="value" style="color:#8b5cf6;">5</div></div>
+                        <div class="mock-card"><div class="label">Completados</div><div class="value" style="color:#22c55e;">3</div></div>
+                    </div>
+                    <div class="mock-table">
+                        <div class="mock-thead"><div class="mock-th">Seguimientos vencidos</div><div class="mock-th">Cliente</div><div class="mock-th">Dias vencido</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Obs. 15 dias</div><div class="mock-td">Juan Perez</div><div class="mock-td">3 dias</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Primer contacto</div><div class="mock-td">Maria Lopez</div><div class="mock-td">1 dia</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="section" id="clientes">
+            <h2><span class="num">4</span> Gestion de Clientes</h2>
+            <div class="screenshot"><img src="screenshots/ventas-clientes.png" alt="Mis clientes — Ventas"><p class="caption">Mis clientes — Ventas</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Clientes</span></p>
+
+            <div class="info-box important">
+                <span class="icon">&#9888;</span>
+                <div>Solo ves <strong>tus propios clientes</strong> del area de ventas. No puedes ver clientes de otros agentes ni de otras areas (posventa, cobranza).</div>
+            </div>
+
+            <h3>Tus permisos</h3>
+            <table class="field-table">
+                <thead><tr><th>Accion</th><th>Permitido</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver tus clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Crear nuevos clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Editar tus clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Eliminar clientes</td><td><span class="badge red">No</span></td></tr>
+                    <tr><td>Exportar clientes</td><td><span class="badge red">No</span></td></tr>
+                    <tr><td>Ver clientes de otros</td><td><span class="badge red">No</span></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Crear un nuevo cliente</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Nuevo Cliente"</h4><p>Boton azul en la esquina superior derecha.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Informacion Personal</h4><p><strong>Nombre completo</strong> (obligatorio), CURP, NSS, Telefono, Correo verificador.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Informacion del Tramite</h4><p>Area: <span class="badge purple">ventas</span>. Agente: tu nombre. Sucursal, AFORE (obligatorios), Causa y Banco.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Expediente</h4><p>Expediente (SI/NO), Solicitud, <strong>Fecha de firma</strong> (importante: activa los seguimientos automaticos), Contrasena, CLABE.</p></div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Observaciones</h4><p>Llena cualquier nota relevante sobre el cliente.</p></div></div>
+                <div class="step"><div class="step-num">6</div><div class="step-content"><h4>Guardar</h4><p>Click en "Guardar Cliente". Si pusiste fecha de firma, se crean los 6 seguimientos automaticamente.</p></div></div>
+            </div>
+
+            
+            <div class="screenshot"><img src="screenshots/ventas-clientes-crear.png" alt="Formulario de creación de cliente — Ventas"><p class="caption">Formulario de creación de cliente — Ventas</p></div>
+<h3>Referencia de Campos</h3>
+            <table class="field-table">
+                <thead><tr><th>Campo</th><th>Requerido</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Nombre</td><td class="required">Si</td><td>Nombre completo del cliente</td></tr>
+                    <tr><td>CURP</td><td>No</td><td>18 caracteres</td></tr>
+                    <tr><td>NSS</td><td>No</td><td>Numero de Seguridad Social</td></tr>
+                    <tr><td>Telefono</td><td>No</td><td>Necesario para WhatsApp</td></tr>
+                    <tr><td>Area</td><td class="required">Si</td><td>ventas (tu area)</td></tr>
+                    <tr><td>Agente</td><td class="required">Si</td><td>Tu nombre</td></tr>
+                    <tr><td>Sucursal</td><td class="required">Si</td><td>Tu sucursal</td></tr>
+                    <tr><td>AFORE</td><td class="required">Si</td><td>AFORE del cliente</td></tr>
+                    <tr><td>Fecha de firma</td><td>No</td><td>Activa seguimientos automaticos</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Ver detalle de un cliente</h3>
+            <p>Click en el nombre del cliente para ver su expediente completo, barra de progreso y las 6 etapas de seguimiento. Desde aqui puedes: <span class="badge yellow">Editar</span> <span class="badge green">Seguimiento</span> <span class="badge teal">Agendar Cita</span> <span class="badge green">WhatsApp</span></p>
+        </div>
+
+        <!-- 5 -->
+        <div class="section" id="seguimientos">
+            <h2><span class="num">5</span> Seguimientos</h2>
+            <p>Los seguimientos son tu herramienta principal para dar atencion oportuna a cada cliente. Se crean automaticamente al registrar la <strong>Fecha de firma</strong>.</p>
+
+            <h3>Las 6 Etapas de Seguimiento</h3>
+            <table class="field-table">
+                <thead><tr><th>Etapa</th><th>Dia</th><th>Que debes hacer</th></tr></thead>
+                <tbody>
+                    <tr><td>Primer contacto</td><td>Dia 1</td><td>Llamar o escribir al cliente para confirmar la firma y dar bienvenida</td></tr>
+                    <tr><td>Observacion 15 dias</td><td>Dia 15</td><td>Verificar que todo va bien, resolver dudas</td></tr>
+                    <tr><td>Observacion 30 dias</td><td>Dia 30</td><td>Segundo seguimiento, verificar avance del tramite</td></tr>
+                    <tr><td>Simulacion / Solicitud</td><td>Dia 45</td><td>Confirmar que la simulacion o solicitud fue enviada</td></tr>
+                    <tr><td>Revision vigencia</td><td>Dia 60</td><td>Revisar vigencia IMSS y estado del proceso</td></tr>
+                    <tr><td>Finalizacion</td><td>Dia 90</td><td>Cerrar el ciclo, confirmar resolucion</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Como completar un seguimiento</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Ve al detalle del cliente</h4><p>Click en el nombre del cliente desde la lista.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Click en "Seguimiento"</h4><p>Boton verde en la parte superior.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Agrega tus observaciones</h4><p>Escribe que hiciste: si llamaste, que dijo el cliente, si quedo pendiente algo.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Marca como completado</h4><p>Se registra tu nombre y la fecha automaticamente.</p></div></div>
+            </div>
+
+            <h3>Colores del Seguimiento</h3>
+            <p><span class="badge green">Verde</span> = Completado (bien hecho) &nbsp; <span class="badge red">Rojo</span> = Vencido (actua YA!) &nbsp; <span class="badge gray">Gris</span> = Pendiente (aun no es momento)</p>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Los seguimientos en <span class="badge red">rojo (vencidos)</span> significan que un cliente esta siendo desatendido. Completalos lo antes posible. Tu supervisor puede ver cuantos vencidos tienes.</div>
+            </div>
+
+            <h3>Barra de Progreso</h3>
+            <p>Cada cliente muestra una barra de 0% a 100% segun sus seguimientos completados:</p>
+            <div style="max-width:400px;">
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);"><span>0% — Sin seguimientos</span></div>
+                <div class="progress-bar"><div class="fill blue" style="width:0%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>50% — 3 de 6 completados</span></div>
+                <div class="progress-bar"><div class="fill yellow" style="width:50%"></div></div>
+                <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--gray-500);margin-top:8px;"><span>100% — Todos completados</span></div>
+                <div class="progress-bar"><div class="fill green" style="width:100%"></div></div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="section" id="citas">
+            <h2><span class="num">6</span> Citas</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Citas</span></p>
+            <p>Solo ves <strong>tus propias citas</strong>.</p>
+
+            <h3>Crear una cita</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Desde Citas o desde un cliente</h4><p>Click en "Nueva Cita" o desde el detalle del cliente click en "Agendar Cita".</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Selecciona el tipo</h4><p><span class="badge blue">Firma</span> <span class="badge purple">Entrega docs</span> <span class="badge teal">Visita</span> <span class="badge orange">Llamada</span> <span class="badge gray">Otro</span></p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Fecha, hora y duracion</h4><p>Configura cuando y cuanto durara. Establece las horas de recordatorio previo.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Guardar</h4><p>Recibiras una notificacion antes de la cita segun las horas configuradas.</p></div></div>
+            </div>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completada</span>
+                <span class="arrow-right"> / </span>
+                <span class="status" style="background:#fee2e2;color:#991b1b;">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="section" id="whatsapp">
+            <h2><span class="num">7</span> WhatsApp — Mensajes</h2>
+            <div class="screenshot"><img src="screenshots/ventas-whatsapp-inbox.png" alt="Bandeja de WhatsApp"><p class="caption">Bandeja de WhatsApp</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Mensajes</span></p>
+
+            <h3>Tus pestanas</h3>
+            <table class="field-table">
+                <thead><tr><th>Pestana</th><th>Que ves</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Mis chats</strong></td><td>Conversaciones que ya tienes asignadas</td></tr>
+                    <tr><td><strong>Sin asignar</strong></td><td>Nuevas conversaciones que puedes tomar</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Como tomar una conversacion</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Ve a la pestana "Sin asignar"</h4><p>Aqui aparecen conversaciones en cola sin agente.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Click en la conversacion</h4><p>Se abre el chat con el historial del cliente.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Asignate</h4><p>Toma la conversacion y se movera a "Mis chats".</p></div></div>
+            </div>
+
+            <h3>Escribir desde un cliente</h3>
+            <p>Desde el detalle de cualquier cliente con telefono registrado, click en el boton <span class="badge green">WhatsApp</span> para abrir o crear una conversacion directa.</p>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>No puedes transferir conversaciones a otros agentes. Si necesitas transferir, pide a tu Supervisor que lo haga.</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="section" id="notificaciones">
+            <h2><span class="num">8</span> Notificaciones</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Notificaciones</span></p>
+            <p>Aqui recibes alertas de:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Seguimientos que se acercan a su fecha o estan vencidos</li>
+                <li>Recordatorios de citas programadas</li>
+            </ul>
+        </div>
+
+        <!-- 9. DOCUMENTOS -->
+        <div class="section" id="documentos">
+            <h2><span class="num">9</span> Documentos</h2>
+            <p class="nav-path">Detalle del Cliente <span class="arrow">&rarr;</span> <span class="current">Documentos</span></p>
+
+            <p>Puedes subir documentos para tus clientes: <strong>JPG, PNG, PDF, DOC/DOCX</strong> (maximo 10 MB).</p>
+
+            <h3>Documentos sensibles</h3>
+            <p>Los documentos sensibles (<span class="badge red">CURP</span> <span class="badge red">NSS</span> <span class="badge red">INE</span> <span class="badge red">AFORE</span> <span class="badge red">CLABE</span> <span class="badge red">Estado de cuenta</span>) requieren <strong>permiso del supervisor</strong> para descargarlos.</p>
+
+            <h3>Como solicitar descarga</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Solicitar Descarga"</h4><p>Junto al documento que necesitas descargar.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Escribe el motivo</h4><p>Indica por que necesitas el documento.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Espera aprobacion</h4><p>Tu supervisor recibira la solicitud y la aprobara o rechazara.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Descarga</h4><p>Una vez aprobada, tienes <strong>24 horas</strong> para descargar el documento.</p></div></div>
+            </div>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Sube los documentos tan pronto como los recibas del cliente. Mantener el expediente completo facilita el seguimiento.</div>
+            </div>
+        </div>
+
+        <!-- 10. TRAMITES -->
+        <div class="section" id="tramites">
+            <h2><span class="num">10</span> Tramites</h2>
+
+            <p>Cuando el tramite formal de un cliente comienza, aparece en el detalle del cliente con sus etapas y progreso.</p>
+
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Cada tramite tiene <strong>etapas</strong> que avanzan secuencialmente</li>
+                <li>Al avanzar una etapa, el cliente recibe una <strong>notificacion por WhatsApp</strong></li>
+                <li>Si un tramite no avanza en <strong>3 o mas dias</strong>, recibiras una alerta</li>
+            </ul>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Las alertas de tramites detenidos tambien las recibe tu supervisor. Manten los tramites en movimiento para evitar escalaciones.</div>
+            </div>
+        </div>
+
+        <!-- 11. PWA -->
+        <div class="section" id="pwa">
+            <h2><span class="num">11</span> Notificaciones Push (PWA)</h2>
+
+            <p>CrearcoCRM se puede instalar como aplicacion en tu celular. Recibiras <strong>notificaciones push</strong> por cada nuevo mensaje de WhatsApp, incluso con el navegador cerrado.</p>
+
+            <h3>Como instalar</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abre Chrome en tu celular</h4><p>Ingresa a <strong>crearcocrm.socialmindcrm.com</strong>.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Instala la app</h4><p>Toca el menu (tres puntos) &rarr; <strong>"Instalar aplicacion"</strong> o <strong>"Agregar a pantalla de inicio"</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Permite notificaciones</h4><p>Acepta cuando el navegador te pida permiso.</p></div></div>
+            </div>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Especialmente util cuando estas de <strong>guardia</strong> y necesitas responder desde el celular fuera de horario.</div>
+            </div>
+        </div>
+
+        <!-- 12. CHATBOT -->
+        <div class="section" id="chatbot">
+            <h2><span class="num">12</span> Chatbot y Precalificacion</h2>
+
+            <p>Cuando un nuevo prospecto escribe por WhatsApp, el <strong>chatbot lo precalifica automaticamente</strong>:</p>
+
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Le pregunta sobre su situacion laboral</li>
+                <li>Si tiene <strong>45 o mas dias desempleado</strong>, califica y se canaliza a un agente de ventas</li>
+                <li>Si no califica, recibe un mensaje con los requisitos</li>
+            </ul>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Cuando recibas un prospecto precalificado, <strong>revisa el historial de la conversacion</strong> con el chatbot antes de contactarlo. Asi sabras su situacion sin preguntar de nuevo.</div>
+            </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="section" id="perfil">
+            <h2><span class="num">13</span> Perfil</h2>
+            <p>Menu superior derecho &rarr; tu nombre. Puedes actualizar: nombre, correo y contrasena.</p>
+        </div>
+
+        <!-- 14 -->
+        <div class="section" id="buenas-practicas">
+            <h2><span class="num">14</span> Buenas Practicas</h2>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Revisa tus seguimientos vencidos cada manana</h4><p>El Dashboard te los muestra al entrar. Atendelos antes de hacer cualquier otra cosa.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Completa los seguimientos a tiempo</h4><p>Un seguimiento completado el dia correcto genera confianza con el cliente.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Manten la informacion actualizada</h4><p>Si el cliente te da datos nuevos (CURP, banco, CLABE), actualiza el registro de inmediato.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Responde WhatsApp rapidamente</h4><p>La velocidad de respuesta impacta directamente en la conversion de ventas.</p></div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Revisa "Sin asignar" regularmente</h4><p>Nuevos prospectos entran por WhatsApp. Si no los tomas, alguien mas lo hara.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="section" id="restricciones">
+            <h2><span class="num">15</span> Lo que NO puedes hacer</h2>
+
+            <table class="field-table">
+                <thead><tr><th>Funcion</th><th>Motivo</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver clientes de otros agentes</td><td>Cada agente solo ve sus propios clientes</td></tr>
+                    <tr><td>Eliminar clientes</td><td>Solo el Administrador puede eliminar</td></tr>
+                    <tr><td>Exportar datos</td><td>Solo Supervisor y Administrador</td></tr>
+                    <tr><td>Ver reportes</td><td>Solo Supervisor y Administrador</td></tr>
+                    <tr><td>Gestionar metas</td><td>Solo Supervisor y Administrador</td></tr>
+                    <tr><td>Transferir conversaciones WhatsApp</td><td>Pide a tu Supervisor</td></tr>
+                    <tr><td>Configurar WhatsApp (chatbot, sesiones, plantillas)</td><td>Solo Supervisor y Administrador</td></tr>
+                    <tr><td>Envio masivo WhatsApp</td><td>Solo Supervisor y Administrador</td></tr>
+                    <tr><td>Administrar usuarios</td><td>Solo Administrador</td></tr>
+                    <tr><td>Gestionar catalogos</td><td>Solo Administrador</td></tr>
+                    <tr><td>Importar datos</td><td>Solo Administrador</td></tr>
+                    <tr><td>Descargar documentos sensibles sin aprobacion</td><td>Requiere autorizacion del Supervisor</td></tr>
+                    <tr><td>Gestionar solicitudes de apoyo entre sucursales</td><td>Solo Supervisor y Administrador</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Si necesitas algo que no esta en tus permisos, contacta a tu Supervisor o Administrador.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="manual-footer">
+        <span>CrearcoCRM v2.0 — SocialMind CRM</span>
+        <span>Marzo 2026</span>
+    </div>
+
+</div>
+</body>
+</html>

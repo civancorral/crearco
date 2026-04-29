@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual — Administrador | CrearcoCRM</title>
+    <link rel="stylesheet" href="manual-styles.css">
+</head>
+<body>
+<div class="manual">
+
+    <!-- HEADER -->
+    <div class="manual-header">
+        <a href="manuales.html" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;">&larr; Volver al indice</a>
+        <div class="role-badge" style="margin-top:12px;">Administrador</div>
+        <h1>Manual de Usuario — Administrador</h1>
+        <p class="subtitle">Acceso completo al sistema CrearcoCRM</p>
+        <span class="version">v2.0 — Marzo 2026</span>
+    </div>
+
+    <!-- TOC -->
+    <div class="toc">
+        <h3>Contenido</h3>
+        <ol>
+            <li><a href="#login">Inicio de Sesion</a></li>
+            <li><a href="#menu">Menu de Navegacion</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#clientes">Gestion de Clientes</a></li>
+            <li><a href="#seguimientos">Seguimientos</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#wa-inbox">WhatsApp — Mensajes</a></li>
+            <li><a href="#wa-dashboard">WhatsApp — Dashboard</a></li>
+            <li><a href="#wa-sessions">WhatsApp — Sesiones</a></li>
+            <li><a href="#wa-templates">WhatsApp — Plantillas</a></li>
+            <li><a href="#wa-bulk">WhatsApp — Envio Masivo</a></li>
+            <li><a href="#wa-config">WhatsApp — Configuracion</a></li>
+            <li><a href="#reportes">Reportes</a></li>
+            <li><a href="#metas">Metas</a></li>
+            <li><a href="#catalogos">Catalogos</a></li>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#importar">Importar Datos</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#tramites">Tramites</a></li>
+            <li><a href="#apoyo">Apoyo entre Sucursales</a></li>
+            <li><a href="#chatbot-precalificacion">Chatbot de Precalificacion</a></li>
+            <li><a href="#pwa">Notificaciones Push (PWA)</a></li>
+            <li><a href="#automatizaciones">Automatizaciones</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+        </ol>
+    </div>
+
+    <div class="manual-content">
+
+        <!-- 1. LOGIN -->
+        <div class="section" id="login">
+            <h2><span class="num">1</span> Inicio de Sesion</h2>
+            <div class="screenshot"><img src="screenshots/login.png" alt="Pantalla de inicio de sesión"><p class="caption">Pantalla de inicio de sesión</p></div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Abra su navegador</h4>
+                        <p>Ingrese a <strong>crearcocrm.socialmindcrm.com</strong> desde cualquier navegador (Chrome, Safari, Firefox).</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Ingrese sus credenciales</h4>
+                        <p>Escriba su <strong>correo electronico</strong> y <strong>contrasena</strong> proporcionados por el administrador del sistema.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Acceda al Dashboard</h4>
+                        <p>Al iniciar sesion, sera redirigido automaticamente al <strong>Dashboard</strong> principal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>El sistema funciona desde cualquier dispositivo con internet: computadora, tablet o celular.</div>
+            </div>
+        </div>
+
+        <!-- 2. MENU -->
+        <div class="section" id="menu">
+            <h2><span class="num">2</span> Menu de Navegacion</h2>
+            <div class="screenshot"><img src="screenshots/admin-sidebar.png" alt="Menú lateral del Administrador"><p class="caption">Menú lateral del Administrador</p></div>
+
+            <p>Como Administrador, tienes acceso a <strong>todas las secciones</strong> del sistema. El menu lateral izquierdo (sidebar) muestra las siguientes opciones:</p>
+
+            <div class="menu-preview">
+                <div class="menu-section">
+                    <div class="menu-section-label">Principal</div>
+                    <div class="menu-item active"><span class="dot"></span> Dashboard</div>
+                    <div class="menu-item"><span class="dot"></span> Clientes</div>
+                    <div class="menu-item"><span class="dot"></span> Citas</div>
+                    <div class="menu-item"><span class="dot"></span> Notificaciones</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">WhatsApp</div>
+                    <div class="menu-item"><span class="dot"></span> Mensajes</div>
+                    <div class="menu-item"><span class="dot"></span> Dashboard WA</div>
+                    <div class="menu-item"><span class="dot"></span> Sesiones WA</div>
+                    <div class="menu-item"><span class="dot"></span> Plantillas</div>
+                    <div class="menu-item"><span class="dot"></span> Envio Masivo</div>
+                    <div class="menu-item"><span class="dot"></span> Config WA</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">Reportes</div>
+                    <div class="menu-item"><span class="dot"></span> Reportes</div>
+                    <div class="menu-item"><span class="dot"></span> Metas</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">Catalogos</div>
+                    <div class="menu-item"><span class="dot"></span> Sucursales</div>
+                    <div class="menu-item"><span class="dot"></span> AFOREs</div>
+                    <div class="menu-item"><span class="dot"></span> Causas</div>
+                    <div class="menu-item"><span class="dot"></span> Bancos</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">Administrar</div>
+                    <div class="menu-item"><span class="dot"></span> Usuarios</div>
+                    <div class="menu-item"><span class="dot"></span> Importar Datos</div>
+                </div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>Las secciones <strong>Catalogos</strong> y <strong>Administrar</strong> son exclusivas del rol Administrador. Ningun otro rol puede verlas.</div>
+            </div>
+        </div>
+
+        <!-- 3. DASHBOARD -->
+        <div class="section" id="dashboard">
+            <h2><span class="num">3</span> Dashboard</h2>
+            <div class="screenshot"><img src="screenshots/admin-dashboard.png" alt="Dashboard del Administrador"><p class="caption">Dashboard del Administrador</p></div>
+
+            <p>El Dashboard es tu vista general del negocio. Como Administrador, ves datos de <strong>todos los agentes y todas las sucursales</strong>.</p>
+
+            <h3>Tarjetas KPI</h3>
+            <div class="ui-mockup">
+                <div class="mockup-bar">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span class="url">crearcocrm.socialmindcrm.com/dashboard</span>
+                </div>
+                <div class="mockup-main" style="padding:20px;">
+                    <div class="mock-title">Dashboard</div>
+                    <div class="mock-cards" style="grid-template-columns:repeat(4,1fr);">
+                        <div class="mock-card"><div class="label">Clientes del mes</div><div class="value" style="color:#3b82f6;">24</div></div>
+                        <div class="mock-card"><div class="label">Expedientes del mes</div><div class="value" style="color:#8b5cf6;">18</div></div>
+                        <div class="mock-card"><div class="label">Completados del mes</div><div class="value" style="color:#22c55e;">12</div></div>
+                        <div class="mock-card"><div class="label">Total historico</div><div class="value">356</div></div>
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                        <div class="mock-card"><div class="label">Grafica: Clientes por mes (7 meses)</div><div style="height:60px;background:linear-gradient(90deg,#3b82f620,#3b82f640);border-radius:4px;margin-top:8px;"></div></div>
+                        <div class="mock-card"><div class="label">Grafica: Distribucion por AFORE</div><div style="height:60px;background:linear-gradient(90deg,#8b5cf620,#8b5cf640);border-radius:4px;margin-top:8px;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Seguimientos vencidos</h3>
+            <p>Lista de los ultimos 10 seguimientos que ya pasaron de su fecha programada. Estos requieren atencion inmediata.</p>
+
+            <h3>Citas de hoy</h3>
+            <p>Las proximas 5 citas programadas para el dia de hoy en todas las sucursales.</p>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Los seguimientos vencidos aparecen en <span class="badge red">rojo</span>. Revisa esta seccion diariamente para asegurarte de que ningun cliente quede sin atencion.</div>
+            </div>
+        </div>
+
+        <!-- 4. CLIENTES -->
+        <div class="section" id="clientes">
+            <h2><span class="num">4</span> Gestion de Clientes</h2>
+            <div class="screenshot"><img src="screenshots/admin-clientes.png" alt="Lista de clientes"><p class="caption">Lista de clientes</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Clientes</span></p>
+
+            <h3>Lista de Clientes</h3>
+            <p>Vista con tabla interactiva (Livewire) que permite filtrar, buscar y paginar. Como Administrador ves <strong>todos los clientes</strong> de todas las sucursales y areas.</p>
+            <p>Filtros disponibles: area (ventas/posventa/cobranza), agente, sucursal, estatus (activo/completado/cancelado), busqueda por nombre.</p>
+
+            <h3>Crear un nuevo cliente</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content">
+                        <h4>Click en "Nuevo Cliente"</h4>
+                        <p>Boton azul en la esquina superior derecha de la lista de clientes.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content">
+                        <h4>Informacion Personal</h4>
+                        <p>Llene: Nombre completo (obligatorio), CURP, NSS, Telefono, Correo verificador.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content">
+                        <h4>Informacion del Tramite</h4>
+                        <p>Seleccione: Area (ventas/posventa/cobranza), Agente asignado, Sucursal, AFORE, Causa y Banco.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content">
+                        <h4>Expediente</h4>
+                        <p>Complete: Expediente (SI/NO), Solicitud (APP/Otro), Fecha de firma, Contrasena, CLABE interbancaria.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-content">
+                        <h4>Seguimiento y Observaciones</h4>
+                        <p>Campos de texto para: Simulacion/Solicitud, Fecha de solicitud, FUR, Revision vigencia IMSS, Observaciones a 15 y 30 dias, Observaciones generales.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">6</div>
+                    <div class="step-content">
+                        <h4>Guardar</h4>
+                        <p>Click en <strong>"Guardar Cliente"</strong>. Si se incluye Fecha de firma, el sistema crea automaticamente los 6 seguimientos programados.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="screenshot"><img src="screenshots/admin-clientes-crear.png" alt="Formulario de creación de cliente"><p class="caption">Formulario de creación de cliente</p></div>
+<h3>Referencia de Campos</h3>
+            <table class="field-table">
+                <thead><tr><th>Campo</th><th>Requerido</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Nombre</td><td class="required">Si</td><td>Nombre completo del cliente</td></tr>
+                    <tr><td>CURP</td><td>No</td><td>Clave Unica de Registro de Poblacion (18 caracteres)</td></tr>
+                    <tr><td>NSS</td><td>No</td><td>Numero de Seguridad Social</td></tr>
+                    <tr><td>Telefono</td><td>No</td><td>Numero de telefono (necesario para WhatsApp)</td></tr>
+                    <tr><td>Correo verificador</td><td>No</td><td>Correo electronico de verificacion</td></tr>
+                    <tr><td>Area</td><td class="required">Si</td><td>ventas, posventa o cobranza</td></tr>
+                    <tr><td>Agente</td><td class="required">Si</td><td>Agente responsable del cliente</td></tr>
+                    <tr><td>Sucursal</td><td class="required">Si</td><td>Sucursal asignada</td></tr>
+                    <tr><td>AFORE</td><td class="required">Si</td><td>Administradora de fondos para el retiro</td></tr>
+                    <tr><td>Causa</td><td>No</td><td>Motivo/causa del tramite</td></tr>
+                    <tr><td>Banco</td><td>No</td><td>Banco del cliente</td></tr>
+                    <tr><td>Expediente</td><td>No</td><td>SI o NO</td></tr>
+                    <tr><td>Solicitud</td><td>No</td><td>APP u Otro</td></tr>
+                    <tr><td>Fecha de firma</td><td>No</td><td>Activa los seguimientos automaticos</td></tr>
+                    <tr><td>CLABE</td><td>No</td><td>Cuenta interbancaria (hasta 25 caracteres)</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Detalle del Cliente</h3>
+            <p>Al hacer click en un cliente, se muestra su expediente completo con:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Informacion personal y del tramite</li>
+                <li>Datos del expediente</li>
+                <li>Observaciones</li>
+                <li><strong>Barra de progreso</strong> del seguimiento (0% a 100%)</li>
+                <li>Las <strong>6 etapas</strong> con iconos de estado (verde=completado, rojo=vencido, gris=pendiente)</li>
+            </ul>
+            <p>Botones disponibles: <span class="badge yellow">Editar</span> <span class="badge green">Seguimiento</span> <span class="badge teal">Agendar Cita</span> <span class="badge green">WhatsApp</span></p>
+
+            
+            <div class="screenshot"><img src="screenshots/admin-cliente-detalle.png" alt="Detalle del expediente del cliente"><p class="caption">Detalle del expediente del cliente</p></div>
+<h3>Eliminar Cliente</h3>
+            <div class="info-box important">
+                <span class="icon">&#9888;</span>
+                <div>Solo el Administrador puede eliminar clientes. Esta accion es irreversible. Asegurate de que realmente deseas eliminar el registro.</div>
+            </div>
+        </div>
+
+        <!-- 5. SEGUIMIENTOS -->
+        <div class="section" id="seguimientos">
+            <h2><span class="num">5</span> Seguimientos</h2>
+            <div class="screenshot"><img src="screenshots/admin-seguimiento.png" alt="Seguimiento del cliente"><p class="caption">Seguimiento del cliente</p></div>
+
+            <p>Los seguimientos son el corazon del proceso de atencion al cliente. Se crean <strong>automaticamente</strong> al registrar un cliente con Fecha de firma.</p>
+
+            <h3>Las 6 Etapas</h3>
+            <table class="field-table">
+                <thead><tr><th>Etapa</th><th>Dia</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Primer contacto</td><td>Dia 1</td><td>Contacto inicial despues de la firma</td></tr>
+                    <tr><td>Observacion 15 dias</td><td>Dia 15</td><td>Primer seguimiento, verificar avance</td></tr>
+                    <tr><td>Observacion 30 dias</td><td>Dia 30</td><td>Segundo seguimiento, resolver dudas</td></tr>
+                    <tr><td>Simulacion / Solicitud</td><td>Dia 45</td><td>Verificar simulacion o solicitud</td></tr>
+                    <tr><td>Revision vigencia</td><td>Dia 60</td><td>Revisar vigencia IMSS y estado</td></tr>
+                    <tr><td>Finalizacion</td><td>Dia 90</td><td>Cierre del ciclo del cliente</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Estados de Seguimiento</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#fef2f2;color:#ef4444;">Vencido</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completado</span>
+            </div>
+            <p><span class="badge gray">Gris</span> = Pendiente (aun no llega la fecha) &nbsp; <span class="badge red">Rojo</span> = Vencido (paso la fecha sin completar) &nbsp; <span class="badge green">Verde</span> = Completado</p>
+
+            <h3>Como completar un seguimiento</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-content"><h4>Ir al detalle del cliente</h4><p>Click en el nombre del cliente desde la lista.</p></div>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-content"><h4>Click en "Seguimiento"</h4><p>Boton verde en la parte superior del detalle.</p></div>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-content"><h4>Agregar observaciones</h4><p>Escriba las notas relevantes sobre el contacto con el cliente.</p></div>
+                </div>
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-content"><h4>Marcar como completado</h4><p>El sistema registra quien completo la etapa y la fecha.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. CITAS -->
+        <div class="section" id="citas">
+            <h2><span class="num">6</span> Citas</h2>
+            <div class="screenshot"><img src="screenshots/admin-citas.png" alt="Gestión de citas"><p class="caption">Gestión de citas</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Citas</span></p>
+
+            <h3>Tipos de Cita</h3>
+            <p><span class="badge blue">Firma</span> <span class="badge purple">Entrega documentos</span> <span class="badge teal">Visita</span> <span class="badge orange">Llamada</span> <span class="badge gray">Otro</span></p>
+
+            <h3>Crear una Cita</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Nueva Cita" o desde detalle del cliente</h4><p>Puede crear desde la seccion Citas o directamente desde un cliente con el boton "Agendar Cita".</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Llene los datos</h4><p>Tipo, fecha y hora, duracion (minutos), recordatorio (horas antes), motivo y notas.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Asigne agente y sucursal</h4><p>Seleccione el agente responsable y la sucursal.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Guardar</h4><p>El sistema enviara recordatorio automatico segun las horas configuradas.</p></div></div>
+            </div>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completada</span>
+                <span class="arrow-right"> / </span>
+                <span class="status" style="background:#fee2e2;color:#991b1b;">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- 7. WA INBOX -->
+        <div class="section" id="wa-inbox">
+            <h2><span class="num">7</span> WhatsApp — Mensajes</h2>
+            <div class="screenshot"><img src="screenshots/admin-whatsapp-inbox.png" alt="Bandeja de WhatsApp"><p class="caption">Bandeja de WhatsApp</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Mensajes</span></p>
+
+            <h3>Pestanas del Inbox</h3>
+            <table class="field-table">
+                <thead><tr><th>Pestana</th><th>Que muestra</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Mis chats</strong></td><td>Conversaciones asignadas a ti</td></tr>
+                    <tr><td><strong>Sin asignar</strong></td><td>Conversaciones en cola sin agente (puedes tomarlas)</td></tr>
+                    <tr><td><strong>Todos</strong></td><td>Todas las conversaciones del sistema</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Indicador de horario</h3>
+            <p><span class="badge green">En horario</span> — El chatbot opera normalmente. <span class="badge red">Fuera de horario</span> — Se envia mensaje de fuera de horario.</p>
+
+            <h3>Filtros por Etiqueta (Tags)</h3>
+            <p>Usa las etiquetas de colores para filtrar conversaciones por categoria. Las etiquetas se configuran en Config WA.</p>
+
+            <h3>Estado de conversaciones</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Pending</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dbeafe;color:#1e40af;">Chatbot</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#fef9c3;color:#854d0e;">En cola</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Activo</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Cerrado</span>
+            </div>
+
+            <h3>Acciones disponibles</h3>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Enviar mensajes de texto</li>
+                <li>Asignar conversacion a cualquier agente</li>
+                <li><strong>Transferir</strong> conversaciones entre agentes o departamentos</li>
+                <li>Ver historial completo de mensajes</li>
+                <li>Vincular conversacion a un cliente existente</li>
+            </ul>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Desde el detalle de un cliente, puedes abrir una conversacion WhatsApp directa con el boton <span class="badge green">WhatsApp</span> (requiere que el cliente tenga telefono registrado).</div>
+            </div>
+        </div>
+
+        <!-- 8. WA DASHBOARD -->
+        <div class="section" id="wa-dashboard">
+            <h2><span class="num">8</span> WhatsApp — Dashboard</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Dashboard WA</span></p>
+            <p>Panel de analiticas de WhatsApp con metricas como:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>Total de mensajes enviados y recibidos</li>
+                <li>Conversaciones activas vs cerradas</li>
+                <li>Tiempos de respuesta promedio por agente</li>
+                <li>Rendimiento por agente</li>
+                <li>Conversaciones sin asignar</li>
+            </ul>
+        </div>
+
+        <!-- 9. WA SESSIONS -->
+        <div class="section" id="wa-sessions">
+            <h2><span class="num">9</span> WhatsApp — Sesiones</h2>
+            <div class="screenshot"><img src="screenshots/admin-whatsapp-sessions.png" alt="Sesiones de WhatsApp"><p class="caption">Sesiones de WhatsApp</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Sesiones WA</span></p>
+
+            <h3>Crear y conectar una sesion</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Crear sesion</h4><p>Asigne la sesion a un agente y registre el numero de telefono.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Generar codigo QR</h4><p>El sistema genera un QR. El agente debe escanearlo con WhatsApp en su celular.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Verificar conexion</h4><p>Una vez escaneado, el estado cambia a <span class="badge green">Conectado</span>.</p></div></div>
+            </div>
+
+            <h3>Estados de sesion</h3>
+            <p><span class="badge green">Conectado</span> — Activa y recibiendo mensajes. <span class="badge red">Desconectado</span> — Requiere reconexion via QR.</p>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Si una sesion se desconecta, los mensajes de ese numero no se recibiran. Verifica el estado regularmente.</div>
+            </div>
+        </div>
+
+        <!-- 10. WA TEMPLATES -->
+        <div class="section" id="wa-templates">
+            <h2><span class="num">10</span> WhatsApp — Plantillas</h2>
+            <div class="screenshot"><img src="screenshots/admin-whatsapp-templates.png" alt="Plantillas de mensajes"><p class="caption">Plantillas de mensajes</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Plantillas</span></p>
+            <p>Las plantillas son mensajes predefinidos que los agentes pueden usar para respuestas rapidas.</p>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Crear plantilla</h4><p>Define un nombre identificador y el contenido del mensaje.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Los agentes la usan</h4><p>Al chatear, los agentes pueden seleccionar la plantilla y enviarla con un click.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 11. WA BULK -->
+        <div class="section" id="wa-bulk">
+            <h2><span class="num">11</span> WhatsApp — Envio Masivo</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Envio Masivo</span></p>
+            <p>Permite enviar un mismo mensaje a multiples clientes simultaneamente. Ideal para notificaciones, recordatorios o campanas.</p>
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Usa el envio masivo con moderacion. Enviar demasiados mensajes puede causar que WhatsApp bloquee el numero temporalmente.</div>
+            </div>
+        </div>
+
+        <!-- 12. WA CONFIG -->
+        <div class="section" id="wa-config">
+            <h2><span class="num">12</span> WhatsApp — Configuracion</h2>
+            <div class="screenshot"><img src="screenshots/admin-whatsapp-config.png" alt="Configuración del chatbot"><p class="caption">Configuración del chatbot</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Config WA</span></p>
+
+            <h3>Chatbot</h3>
+            <table class="field-table">
+                <thead><tr><th>Configuracion</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td>Activar/Desactivar</td><td>Enciende o apaga el chatbot automatico</td></tr>
+                    <tr><td>Mensaje de bienvenida</td><td>Primer mensaje que recibe el cliente al escribir</td></tr>
+                    <tr><td>Menu de opciones</td><td>Opciones numeradas que el cliente puede elegir</td></tr>
+                    <tr><td>Mensaje de opcion invalida</td><td>Respuesta cuando el cliente escribe algo no reconocido</td></tr>
+                    <tr><td>Mensaje fuera de horario</td><td>Respuesta automatica fuera del horario de atencion</td></tr>
+                    <tr><td>Mensaje en cola</td><td>Respuesta cuando el cliente pasa a la cola de espera</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Horario de Atencion</h3>
+            <p>Configura los dias y horas en que el sistema opera en horario. Fuera de este horario se envia el mensaje automatico de fuera de horario.</p>
+
+            <h3>Etiquetas (Tags)</h3>
+            <p>Crea etiquetas con nombre y color para categorizar conversaciones. Los agentes pueden filtrar por etiqueta en el inbox.</p>
+        </div>
+
+        <!-- 13. REPORTES -->
+        <div class="section" id="reportes">
+            <h2><span class="num">13</span> Reportes</h2>
+            <div class="screenshot"><img src="screenshots/admin-reportes.png" alt="Módulo de reportes"><p class="caption">Módulo de reportes</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Reportes <span class="arrow">&rarr;</span> <span class="current">Reportes</span></p>
+
+            <h3>Tipos de Reporte</h3>
+            <table class="field-table">
+                <thead><tr><th>Reporte</th><th>Que muestra</th><th>Exportar</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Por Agentes</strong></td><td>Clientes, expedientes y completados por cada agente</td><td>PDF / Excel</td></tr>
+                    <tr><td><strong>Por Sucursales</strong></td><td>Mismas metricas agrupadas por sucursal</td><td>PDF / Excel</td></tr>
+                    <tr><td><strong>Por AFOREs</strong></td><td>Distribucion de clientes por administradora de fondos</td><td>PDF / Excel</td></tr>
+                </tbody>
+            </table>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Seleccionar tipo de reporte</h4><p>Elige entre Agentes, Sucursales o AFOREs.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Aplicar filtros</h4><p>Filtra por rango de fechas, area, sucursal, etc.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Exportar</h4><p>Descarga en PDF (para imprimir) o Excel (para analizar datos).</p></div></div>
+            </div>
+        </div>
+
+        <!-- 14. METAS -->
+        <div class="section" id="metas">
+            <h2><span class="num">14</span> Metas</h2>
+            <div class="screenshot"><img src="screenshots/admin-metas.png" alt="Gestión de metas"><p class="caption">Gestión de metas</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Reportes <span class="arrow">&rarr;</span> <span class="current">Metas</span></p>
+
+            <h3>Crear una Meta</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Tipo de meta</h4><p>Seleccione: por <strong>Agente</strong> (individual) o por <strong>Sucursal</strong> (toda la oficina).</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Definir objetivos</h4><p>Meta de clientes y meta de expedientes para el mes.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Guardar</h4><p>El sistema calcula automaticamente el porcentaje de cumplimiento.</p></div></div>
+            </div>
+
+            <h3>Semaforo de Cumplimiento</h3>
+            <table class="field-table">
+                <thead><tr><th>Color</th><th>Rango</th><th>Significado</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="badge red">Rojo</span></td><td>Menos de 50%</td><td>Bajo rendimiento, requiere atencion</td></tr>
+                    <tr><td><span class="badge yellow">Amarillo</span></td><td>50% — 80%</td><td>En progreso, puede mejorar</td></tr>
+                    <tr><td><span class="badge green">Verde</span></td><td>80% o mas</td><td>Meta cumplida o en camino</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 15. CATALOGOS -->
+        <div class="section" id="catalogos">
+            <h2><span class="num">15</span> Catalogos</h2>
+            <div class="screenshot"><img src="screenshots/admin-sucursales.png" alt="Catálogo de sucursales"><p class="caption">Catálogo de sucursales</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Catalogos</span></p>
+
+            <div class="info-box note">
+                <span class="icon">&#128274;</span>
+                <div>Esta seccion es <strong>exclusiva del Administrador</strong>. Aqui se configuran los datos base que usan todos los demas modulos.</div>
+            </div>
+
+            <h3>Sucursales</h3>
+            <p>Alta, edicion y baja de oficinas/sucursales. Cada sucursal se asigna a clientes, agentes y supervisores.</p>
+
+            <h3>AFOREs</h3>
+            <p>Catalogo de Administradoras de Fondos para el Retiro. Cada cliente se vincula a una AFORE.</p>
+
+            <h3>Causas</h3>
+            <p>Motivos o razones del tramite del cliente.</p>
+
+            <h3>Bancos</h3>
+            <p>Catalogo de instituciones bancarias para la informacion financiera del cliente.</p>
+        </div>
+
+        <!-- 16. USUARIOS -->
+        <div class="section" id="usuarios">
+            <h2><span class="num">16</span> Usuarios</h2>
+            <div class="screenshot"><img src="screenshots/admin-usuarios.png" alt="Administración de usuarios"><p class="caption">Administración de usuarios</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Administrar <span class="arrow">&rarr;</span> <span class="current">Usuarios</span></p>
+
+            <h3>Crear un Usuario</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Nuevo Usuario"</h4><p>Desde la lista de usuarios.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Datos del usuario</h4><p>Nombre, correo electronico, contrasena, telefono.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Asignar rol</h4><p>Seleccione: Administrador, Supervisor, Ventas, Posventa o Cobrador.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Asignar sucursal</h4><p>Elija la sucursal donde trabajara el usuario.</p></div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Guardar</h4><p>El usuario podra iniciar sesion inmediatamente con las credenciales proporcionadas.</p></div></div>
+            </div>
+
+            <h3>Activar / Desactivar Usuario</h3>
+            <p>Puede activar o desactivar usuarios sin eliminarlos. Un usuario desactivado no puede iniciar sesion pero su historial se conserva.</p>
+        </div>
+
+        <!-- 17. IMPORTAR -->
+        <div class="section" id="importar">
+            <h2><span class="num">17</span> Importar Datos</h2>
+            <div class="screenshot"><img src="screenshots/admin-importar.png" alt="Importación de datos"><p class="caption">Importación de datos</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> Administrar <span class="arrow">&rarr;</span> <span class="current">Importar Datos</span></p>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Preparar archivo Excel</h4><p>Formato .xlsx o .xls, maximo 10 MB. Las columnas deben coincidir con los campos del sistema.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Subir archivo</h4><p>Seleccione el archivo y click en importar.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Revisar resultados</h4><p>El sistema muestra: registros procesados, exitosos y fallidos con detalle de errores.</p></div></div>
+            </div>
+
+            <h3>Historial de Importaciones</h3>
+            <p>Consulte todas las importaciones realizadas con fecha, usuario, y resultados.</p>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Revise siempre el reporte de errores despues de importar. Los registros con datos invalidos no se importan y aparecen en la lista de errores.</div>
+            </div>
+        </div>
+
+        <!-- 18. DOCUMENTOS -->
+        <div class="section" id="documentos">
+            <h2><span class="num">18</span> Documentos</h2>
+            <p class="nav-path">Detalle del Cliente <span class="arrow">&rarr;</span> <span class="current">Documentos</span></p>
+
+            <p>El sistema permite subir y gestionar documentos por cliente. Formatos soportados: <strong>JPG, PNG, PDF, DOC/DOCX</strong> (maximo 10 MB).</p>
+
+            <h3>Tipos de documento sensible</h3>
+            <p>Los siguientes tipos requieren <strong>aprobacion del supervisor</strong> para ser descargados por agentes:</p>
+            <p><span class="badge red">CURP</span> <span class="badge red">NSS</span> <span class="badge red">INE</span> <span class="badge red">AFORE</span> <span class="badge red">CLABE</span> <span class="badge red">Estado de cuenta</span></p>
+
+            <h3>Flujo de descarga de documentos sensibles</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Agente solicita descarga</h4><p>El agente hace click en "Solicitar Descarga" e indica el motivo.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Supervisor revisa</h4><p>La solicitud aparece en <strong>Solicitudes de Descarga</strong>. El supervisor puede aprobar o rechazar (con motivo).</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Descarga aprobada</h4><p>Una vez aprobada, el agente tiene <strong>24 horas</strong> para descargar el documento.</p></div></div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128274;</span>
+                <div>Cada subida y descarga de documentos queda registrada en la <strong>bitacora de auditoria</strong> del sistema. Los supervisores y administradores descargan documentos sensibles directamente.</div>
+            </div>
+        </div>
+
+        <!-- 19. TRAMITES -->
+        <div class="section" id="tramites">
+            <h2><span class="num">19</span> Tramites</h2>
+            <p class="nav-path">Detalle del Cliente <span class="arrow">&rarr;</span> <span class="current">Tramites</span></p>
+
+            <p>Los tramites representan procedimientos formales (pension, retiro, etc.) de cada cliente. Cada tramite tiene:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li><strong>Folio</strong> unico de identificacion</li>
+                <li><strong>Tipo de tramite</strong> (configurable por el administrador)</li>
+                <li><strong>Etapas</strong> que avanzan secuencialmente</li>
+                <li><strong>Checklist de documentos</strong> requeridos por etapa</li>
+            </ul>
+
+            <h3>Avance de etapas</h3>
+            <p>Al avanzar una etapa, el sistema envia automaticamente una <strong>notificacion por WhatsApp</strong> al cliente informandole del progreso.</p>
+
+            <h3>Tramites detenidos</h3>
+            <p>El sistema detecta automaticamente tramites que llevan <strong>mas de 3 dias</strong> sin avanzar de etapa. Cuando esto ocurre:</p>
+            <ul style="margin:8px 0 8px 20px;font-size:14px;color:var(--gray-600);">
+                <li>El agente asignado recibe una notificacion en el sistema</li>
+                <li>El supervisor recibe un resumen consolidado por sucursal</li>
+            </ul>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div>Los tramites detenidos indican posibles problemas en el proceso. Como Administrador, revisa los reportes de tramites detenidos regularmente.</div>
+            </div>
+        </div>
+
+        <!-- 20. APOYO ENTRE SUCURSALES -->
+        <div class="section" id="apoyo">
+            <h2><span class="num">20</span> Apoyo entre Sucursales</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Apoyo Sucursales</span></p>
+
+            <p>Permite solicitar y gestionar apoyo de personal entre sucursales cuando una oficina necesita refuerzos temporales.</p>
+
+            <h3>Flujo de apoyo</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Crear solicitud</h4><p>El supervisor indica: sucursal destino, departamento, numero de agentes, motivo y fechas.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Aprobacion</h4><p>La sucursal destino aprueba o rechaza la solicitud.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Asignar agentes</h4><p>Se asignan agentes de la sucursal destino a la solicitud.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Completar</h4><p>Al finalizar el periodo de apoyo, se marca como completada.</p></div></div>
+            </div>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dbeafe;color:#1e40af;">Aprobada</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Activa</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Completada</span>
+            </div>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Los agentes asignados a apoyo pueden ver las conversaciones de la sucursal solicitante durante el periodo activo.</div>
+            </div>
+        </div>
+
+        <!-- 21. CHATBOT PRECALIFICACION -->
+        <div class="section" id="chatbot-precalificacion">
+            <h2><span class="num">21</span> Chatbot de Precalificacion</h2>
+
+            <p>El chatbot de WhatsApp incluye un flujo automatizado de precalificacion para nuevos prospectos:</p>
+
+            <h3>Flujo automatico</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Cliente escribe</h4><p>El bot verifica si el numero ya esta registrado en el sistema.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Cliente existente</h4><p>Lo saluda por nombre. Si tiene deuda activa, lo canaliza a <strong>cobranza</strong>. Si tiene tramite activo, lo canaliza a <strong>posventa</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Cliente nuevo</h4><p>Le hace preguntas sobre su situacion laboral (empleo, tiempo desempleado, etc.).</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Calificacion</h4><p>Si el cliente tiene <strong>45 o mas dias desempleado</strong>, califica y se canaliza a un agente de ventas. Si no califica, recibe un mensaje explicando los requisitos.</p></div></div>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>El flujo de precalificacion se configura desde <strong>Config WA &rarr; Chatbot</strong>. El administrador puede editar las preguntas y los criterios de calificacion.</div>
+            </div>
+        </div>
+
+        <!-- 22. PWA / PUSH -->
+        <div class="section" id="pwa">
+            <h2><span class="num">22</span> Notificaciones Push (PWA)</h2>
+
+            <p>CrearcoCRM funciona como <strong>Progressive Web App (PWA)</strong>, lo que permite instalarlo como aplicacion en dispositivos moviles.</p>
+
+            <h3>Como instalar</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abrir en Chrome</h4><p>Ingrese a <strong>crearcocrm.socialmindcrm.com</strong> desde Chrome en su celular.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Instalar</h4><p>Toque el menu (tres puntos) &rarr; <strong>"Instalar aplicacion"</strong> o <strong>"Agregar a pantalla de inicio"</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Permitir notificaciones</h4><p>Al abrir la app, acepte el permiso de notificaciones cuando el navegador lo solicite.</p></div></div>
+            </div>
+
+            <h3>Notificaciones push</h3>
+            <p>Los agentes reciben notificaciones push por cada <strong>nuevo mensaje de WhatsApp</strong> en sus conversaciones asignadas. Las notificaciones funcionan <strong>incluso con el navegador cerrado</strong>.</p>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Ideal para agentes de <strong>guardia</strong> que necesitan responder desde el celular fuera de horario.</div>
+            </div>
+        </div>
+
+        <!-- 23. AUTOMATIZACIONES -->
+        <div class="section" id="automatizaciones">
+            <h2><span class="num">23</span> Automatizaciones</h2>
+
+            <p>El sistema ejecuta las siguientes acciones automaticas:</p>
+
+            <table class="field-table">
+                <thead><tr><th>Automatizacion</th><th>Frecuencia</th><th>Descripcion</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Reasignacion de clientes</strong></td><td>Al desactivar usuario</td><td>Los clientes activos del usuario desactivado se reasignan automaticamente al supervisor del departamento.</td></tr>
+                    <tr><td><strong>Recordatorios de cobranza</strong></td><td>Diario</td><td>Envia recordatorios por WhatsApp a clientes con pagos proximos (3, 7 y 15 dias antes del vencimiento).</td></tr>
+                    <tr><td><strong>Abonos vencidos</strong></td><td>Diario 6:00 AM</td><td>Marca automaticamente como "vencido" los abonos programados que pasaron su fecha de pago.</td></tr>
+                    <tr><td><strong>Tramites detenidos</strong></td><td>Diario 8:00 AM</td><td>Detecta tramites sin avance por mas de 3 dias y notifica al agente y supervisor.</td></tr>
+                    <tr><td><strong>Notificacion de avance</strong></td><td>Al avanzar etapa</td><td>Envia WhatsApp al cliente informandole del progreso de su tramite.</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>Estas automatizaciones se ejecutan en segundo plano. Como Administrador, puedes verificar su ejecucion en los logs del sistema.</div>
+            </div>
+        </div>
+
+        <!-- 24. PERFIL -->
+        <div class="section" id="perfil">
+            <h2><span class="num">24</span> Perfil</h2>
+            <p>Acceda desde el menu superior derecho haciendo click en su nombre.</p>
+            <p>Puede actualizar: nombre, correo electronico y contrasena.</p>
+        </div>
+
+    </div>
+
+    <div class="manual-footer">
+        <span>CrearcoCRM v2.0 — SocialMind CRM</span>
+        <span>Marzo 2026</span>
+    </div>
+
+</div>
+</body>
+</html>

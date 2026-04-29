@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrearcoCRM — Manuales de Usuario</title>
+    <link rel="stylesheet" href="manual-styles.css">
+    <style>
+        body { background: #f0f4f8; }
+
+        .index-page { max-width: 960px; margin: 0 auto; min-height: 100vh; }
+
+        .index-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .index-header::before {
+            content: '';
+            position: absolute;
+            top: -60%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(20,184,166,0.06);
+        }
+
+        .index-header .logo {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #14b8a6;
+            margin-bottom: 16px;
+        }
+
+        .index-header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .index-header .subtitle {
+            font-size: 15px;
+            opacity: 0.7;
+            font-weight: 300;
+        }
+
+        .cards-section {
+            padding: 40px 50px;
+        }
+
+        .cards-section h2 {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .role-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .role-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .role-card .card-top {
+            height: 4px;
+        }
+
+        .role-card .card-body {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .role-card .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .role-card .card-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .role-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 6px;
+        }
+
+        .role-card p {
+            font-size: 13px;
+            color: #64748b;
+            line-height: 1.5;
+            flex: 1;
+            margin-bottom: 16px;
+        }
+
+        .role-card .card-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #14b8a6;
+        }
+
+        .role-card:hover .card-btn { gap: 10px; }
+
+        /* Card colors */
+        .card-admin .card-top { background: #3b82f6; }
+        .card-admin .card-icon { background: #eff6ff; color: #3b82f6; }
+
+        .card-supervisor .card-top { background: #8b5cf6; }
+        .card-supervisor .card-icon { background: #f5f3ff; color: #8b5cf6; }
+
+        .card-ventas .card-top { background: #14b8a6; }
+        .card-ventas .card-icon { background: #f0fdfa; color: #14b8a6; }
+
+        .card-posventa .card-top { background: #f97316; }
+        .card-posventa .card-icon { background: #fff7ed; color: #f97316; }
+
+        .card-cobrador .card-top { background: #ef4444; }
+        .card-cobrador .card-icon { background: #fef2f2; color: #ef4444; }
+
+        /* Docs section */
+        .docs-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+
+        .doc-link {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 20px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.15s;
+        }
+
+        .doc-link:hover { background: #f8fafc; }
+
+        .doc-link .doc-icon {
+            width: 40px;
+            height: 40px;
+            background: #eff6ff;
+            color: #3b82f6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .doc-link h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .doc-link p {
+            font-size: 12px;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        .index-footer {
+            background: #1e293b;
+            color: #64748b;
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .index-header { padding: 30px 24px; }
+            .index-header h1 { font-size: 24px; }
+            .cards-section { padding: 24px; }
+            .cards-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="index-page">
+
+    <div class="index-header">
+        <div class="logo">CrearcoCRM</div>
+        <h1>Manuales de Usuario</h1>
+        <p class="subtitle">Seleccione su rol para acceder al manual correspondiente</p>
+    </div>
+
+    <div class="cards-section">
+
+        <h2>Manuales por Rol</h2>
+
+        <div class="cards-grid">
+
+            <!-- Administrador -->
+            <a href="manual-administrador.html" class="role-card card-admin">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3>Administrador</h3>
+                    <p>Acceso completo al sistema. Gestión de usuarios, catálogos, reportes, configuración de WhatsApp y supervisión general.</p>
+                    <span class="card-btn">Ver Manual &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Supervisor -->
+            <a href="manual-supervisor.html" class="role-card card-supervisor">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3>Supervisor</h3>
+                    <p>Supervisión de sucursal. Reportes, metas y gestión de agentes a nivel de sucursal con acceso a WhatsApp completo.</p>
+                    <span class="card-btn">Ver Manual &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Ventas -->
+            <a href="manual-ventas.html" class="role-card card-ventas">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Agente de Ventas</h3>
+                    <p>Gestión de clientes de ventas, seguimientos, citas y comunicación por WhatsApp con prospectos.</p>
+                    <span class="card-btn">Ver Manual &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Posventa -->
+            <a href="manual-posventa.html" class="role-card card-posventa">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>Agente de Posventa</h3>
+                    <p>Seguimiento posventa de clientes, gestión de expedientes, citas y comunicación por WhatsApp.</p>
+                    <span class="card-btn">Ver Manual &rarr;</span>
+                </div>
+            </a>
+
+            <!-- Cobrador -->
+            <a href="manual-cobrador.html" class="role-card card-cobrador">
+                <div class="card-top"></div>
+                <div class="card-body">
+                    <div class="card-icon">
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                    </div>
+                    <h3>Cobrador</h3>
+                    <p>Gestión de cobranza, seguimiento de pagos pendientes y comunicación con clientes morosos.</p>
+                    <span class="card-btn">Ver Manual &rarr;</span>
+                </div>
+            </a>
+
+        </div>
+
+        <h2>Otros Documentos</h2>
+
+        <div class="docs-grid">
+            <a href="propuesta-crearco-2026.html" class="doc-link">
+                <div class="doc-icon">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+                <div>
+                    <h4>Propuesta Comercial — Crearco 2026</h4>
+                    <p>Propuesta de modernización tecnológica integral</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="index-footer">
+        CrearcoCRM v1.0 &mdash; SocialMind CRM &mdash; Marzo 2026
+    </div>
+
+</div>
+
+</body>
+</html>

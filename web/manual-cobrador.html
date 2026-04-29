@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual — Cobrador | CrearcoCRM</title>
+    <link rel="stylesheet" href="manual-styles.css">
+</head>
+<body>
+<div class="manual">
+
+    <div class="manual-header">
+        <a href="manuales.html" style="color:rgba(255,255,255,.5);font-size:13px;text-decoration:none;">&larr; Volver al indice</a>
+        <div class="role-badge" style="margin-top:12px;background:#ef4444;">Cobrador</div>
+        <h1>Manual de Usuario — Cobrador</h1>
+        <p class="subtitle">Gestion de cobranza y seguimiento de pagos</p>
+        <span class="version">v2.0 — Marzo 2026</span>
+    </div>
+
+    <div class="toc">
+        <h3>Contenido</h3>
+        <ol>
+            <li><a href="#login">Inicio de Sesion</a></li>
+            <li><a href="#menu">Tu Menu de Navegacion</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#clientes">Gestion de Clientes</a></li>
+            <li><a href="#seguimientos">Seguimientos</a></li>
+            <li><a href="#citas">Citas</a></li>
+            <li><a href="#whatsapp">WhatsApp — Mensajes</a></li>
+            <li><a href="#notificaciones">Notificaciones</a></li>
+            <li><a href="#documentos">Documentos</a></li>
+            <li><a href="#recordatorios">Recordatorios Automaticos de Cobranza</a></li>
+            <li><a href="#pwa">Notificaciones Push (PWA)</a></li>
+            <li><a href="#perfil">Perfil</a></li>
+            <li><a href="#buenas-practicas">Buenas Practicas para Cobranza</a></li>
+            <li><a href="#restricciones">Lo que NO puedes hacer</a></li>
+        </ol>
+    </div>
+
+    <div class="manual-content">
+
+        <!-- 1 -->
+        <div class="section" id="login">
+            <h2><span class="num">1</span> Inicio de Sesion</h2>
+            <div class="screenshot"><img src="screenshots/login.png" alt="Pantalla de inicio de sesión"><p class="caption">Pantalla de inicio de sesión</p></div>
+
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abre tu navegador</h4><p>Ingresa a <strong>crearcocrm.socialmindcrm.com</strong></p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Ingresa tus credenciales</h4><p>Correo y contrasena proporcionados por tu administrador.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Listo</h4><p>Llegaras a tu Dashboard de cobranza con tus clientes y pendientes.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="section" id="menu">
+            <h2><span class="num">2</span> Tu Menu de Navegacion</h2>
+            <div class="screenshot"><img src="screenshots/cobrador-sidebar.png" alt="Menú lateral — Cobranza"><p class="caption">Menú lateral — Cobranza</p></div>
+
+
+            <div class="menu-preview">
+                <div class="menu-section">
+                    <div class="menu-section-label">Principal</div>
+                    <div class="menu-item active"><span class="dot"></span> Dashboard</div>
+                    <div class="menu-item"><span class="dot"></span> Clientes</div>
+                    <div class="menu-item"><span class="dot"></span> Citas</div>
+                    <div class="menu-item"><span class="dot"></span> Notificaciones</div>
+                </div>
+                <div class="menu-section">
+                    <div class="menu-section-label">WhatsApp</div>
+                    <div class="menu-item"><span class="dot"></span> Mensajes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="section" id="dashboard">
+            <h2><span class="num">3</span> Dashboard</h2>
+            <div class="screenshot"><img src="screenshots/cobrador-dashboard.png" alt="Dashboard personal — Cobranza"><p class="caption">Dashboard personal — Cobranza</p></div>
+
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Tu Dashboard muestra <strong>unicamente tus datos</strong> del area de <span class="badge red">cobranza</span>.</div>
+            </div>
+
+            <div class="ui-mockup">
+                <div class="mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">crearcocrm.socialmindcrm.com/dashboard</span></div>
+                <div class="mockup-main" style="padding:20px;">
+                    <div class="mock-title">Mi Dashboard — Cobranza</div>
+                    <div class="mock-cards">
+                        <div class="mock-card"><div class="label">Mis clientes</div><div class="value" style="color:#ef4444;">22</div></div>
+                        <div class="mock-card"><div class="label">Expedientes</div><div class="value" style="color:#8b5cf6;">15</div></div>
+                        <div class="mock-card"><div class="label">Completados</div><div class="value" style="color:#22c55e;">8</div></div>
+                    </div>
+                    <div class="mock-table">
+                        <div class="mock-thead"><div class="mock-th" style="color:#ef4444;">SEGUIMIENTOS VENCIDOS</div><div class="mock-th">Cliente</div><div class="mock-th">Dias</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Obs. 15 dias</div><div class="mock-td">Carlos Mendez</div><div class="mock-td">5 dias</div></div>
+                        <div class="mock-row"><div class="mock-td" style="color:#ef4444;">Primer contacto</div><div class="mock-td">Laura Torres</div><div class="mock-td">2 dias</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box warning">
+                <span class="icon">&#9888;</span>
+                <div><strong>En cobranza, cada dia de retraso cuenta.</strong> Los seguimientos vencidos (en rojo) son tu maxima prioridad. Atiendelos ANTES de cualquier otra tarea.</div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="section" id="clientes">
+            <h2><span class="num">4</span> Gestion de Clientes</h2>
+            <div class="screenshot"><img src="screenshots/cobrador-clientes.png" alt="Mis clientes — Cobranza"><p class="caption">Mis clientes — Cobranza</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Clientes</span></p>
+
+            <div class="info-box important">
+                <span class="icon">&#9888;</span>
+                <div><strong>Diferencia importante:</strong> Como Cobrador, <strong>NO puedes crear clientes nuevos</strong>. Los clientes de cobranza son asignados por tu Supervisor o Administrador. Tu trabajo es darles seguimiento y gestionar su cobranza.</div>
+            </div>
+
+            <h3>Tus permisos</h3>
+            <table class="field-table">
+                <thead><tr><th>Accion</th><th>Permitido</th></tr></thead>
+                <tbody>
+                    <tr><td>Ver tus clientes de cobranza</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Editar tus clientes</td><td><span class="badge green">Si</span></td></tr>
+                    <tr><td>Crear clientes nuevos</td><td><span class="badge red">No</span></td></tr>
+                    <tr><td>Eliminar clientes</td><td><span class="badge red">No</span></td></tr>
+                    <tr><td>Exportar datos</td><td><span class="badge red">No</span></td></tr>
+                </tbody>
+            </table>
+
+            <h3>Campos clave para Cobranza</h3>
+            <table class="field-table">
+                <thead><tr><th>Campo</th><th>Para que lo usas</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>CLABE interbancaria</strong></td><td>Cuenta donde se deben hacer los depositos o pagos</td></tr>
+                    <tr><td><strong>Banco</strong></td><td>Institucion bancaria del cliente</td></tr>
+                    <tr><td><strong>Observaciones</strong></td><td>Registra TODOS los acuerdos de pago: fechas, montos, metodos</td></tr>
+                    <tr><td><strong>Estatus</strong></td><td>Activo = en proceso / Completado = pagado / Cancelado = irrecuperable</td></tr>
+                    <tr><td><strong>Telefono</strong></td><td>Para contacto directo y WhatsApp</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Como actualizar informacion de pago</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Abre el detalle del cliente</h4><p>Click en el nombre del cliente.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Click en "Editar"</h4><p>Boton amarillo en la parte superior.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Actualiza los campos relevantes</h4><p>CLABE, banco, observaciones con detalle del acuerdo de pago.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Guardar</h4><p>Los cambios quedan registrados con tu nombre.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="section" id="seguimientos">
+            <h2><span class="num">5</span> Seguimientos</h2>
+
+            <h3>Las 6 Etapas en contexto de Cobranza</h3>
+            <table class="field-table">
+                <thead><tr><th>Etapa</th><th>Dia</th><th>Que hacer en Cobranza</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Primer contacto</strong></td><td>Dia 1</td><td>Contacto inicial: informar el adeudo, establecer compromiso de pago</td></tr>
+                    <tr><td><strong>Observacion 15 dias</strong></td><td>Dia 15</td><td>Primer seguimiento: verificar si se hizo el pago prometido</td></tr>
+                    <tr><td><strong>Observacion 30 dias</strong></td><td>Dia 30</td><td>Segundo seguimiento: si no pago, escalar la urgencia</td></tr>
+                    <tr><td><strong>Simulacion / Solicitud</strong></td><td>Dia 45</td><td>Revisar si el acuerdo de pago se esta cumpliendo</td></tr>
+                    <tr><td><strong>Revision vigencia</strong></td><td>Dia 60</td><td>Verificar estado final del convenio de pago</td></tr>
+                    <tr><td><strong>Finalizacion</strong></td><td>Dia 90</td><td>Cerrar: pagado totalmente, convenio en curso, o escalar a supervisor</td></tr>
+                </tbody>
+            </table>
+
+            <h3>Como completar un seguimiento</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Ir al detalle del cliente</h4><p>Click en el nombre.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Click en "Seguimiento"</h4><p>Boton verde.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Registrar observaciones de cobranza</h4><p>Ejemplo: "Contacto telefonico. Cliente se compromete a pagar $5,000 el 15/marzo via transferencia SPEI. Ref: acuerdo verbal."</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Marcar como completado</h4><p>Se registra tu nombre y la fecha.</p></div></div>
+            </div>
+
+            <h3>Colores</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#f1f5f9;color:#64748b;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#fef2f2;color:#ef4444;">Vencido</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completado</span>
+            </div>
+
+            <div class="info-box important">
+                <span class="icon">&#128176;</span>
+                <div><strong>ROJO = dinero que no se esta recuperando.</strong> Cada seguimiento vencido es una oportunidad de cobro perdida. Prioriza SIEMPRE los rojos.</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="section" id="citas">
+            <h2><span class="num">6</span> Citas</h2>
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> <span class="current">Citas</span></p>
+
+            <h3>Tipos mas comunes en Cobranza</h3>
+            <p><span class="badge orange">Llamada</span> (lo mas frecuente) &nbsp; <span class="badge teal">Visita</span> (para casos que requieren presencia)</p>
+
+            <p>Crea citas para organizar tus llamadas de cobro y visitas. Establece recordatorios para no olvidar ningun compromiso.</p>
+
+            <h3>Estados</h3>
+            <div class="status-flow">
+                <span class="status" style="background:#fef9c3;color:#854d0e;">Pendiente</span>
+                <span class="arrow-right">&rarr;</span>
+                <span class="status" style="background:#dcfce7;color:#16a34a;">Completada</span>
+                <span class="arrow-right"> / </span>
+                <span class="status" style="background:#fee2e2;color:#991b1b;">Cancelada</span>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="section" id="whatsapp">
+            <h2><span class="num">7</span> WhatsApp — Mensajes</h2>
+            <div class="screenshot"><img src="screenshots/cobrador-whatsapp-inbox.png" alt="Bandeja de WhatsApp"><p class="caption">Bandeja de WhatsApp</p></div>
+
+            <p class="nav-path">Sidebar <span class="arrow">&rarr;</span> WhatsApp <span class="arrow">&rarr;</span> <span class="current">Mensajes</span></p>
+
+            <h3>Pestanas</h3>
+            <p><strong>Mis chats</strong> — Tus conversaciones. <strong>Sin asignar</strong> — Nuevas que puedes tomar.</p>
+
+            <h3>Tono profesional para Cobranza</h3>
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Siempre manten un tono <strong>firme pero respetuoso</strong>. El objetivo es recuperar el pago manteniendo la relacion profesional. Evita mensajes amenazantes o agresivos.</div>
+            </div>
+
+            <h3>Ejemplos de mensajes utiles</h3>
+            <div style="background:var(--gray-50);border-radius:8px;padding:16px;margin:12px 0;font-size:13px;color:var(--gray-600);">
+                <p style="margin-bottom:8px;"><strong>Recordatorio de pago:</strong></p>
+                <p style="background:#fff;padding:10px;border-radius:6px;border-left:3px solid #22c55e;margin-bottom:12px;">"Buenos dias [nombre]. Le recordamos que su compromiso de pago de $[monto] vence el [fecha]. Quedamos atentos. Saludos."</p>
+                <p style="margin-bottom:8px;"><strong>Seguimiento de pago vencido:</strong></p>
+                <p style="background:#fff;padding:10px;border-radius:6px;border-left:3px solid #f97316;">"Buen dia [nombre]. Nos comunicamos para dar seguimiento a su pago pendiente de $[monto] que tenia como fecha limite el [fecha]. Le pedimos nos confirme la situacion para buscar la mejor solucion. Gracias."</p>
+            </div>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div>No puedes transferir conversaciones. Si un cliente necesita ser atendido por otro departamento, pidelo a tu Supervisor.</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="section" id="notificaciones">
+            <h2><span class="num">8</span> Notificaciones</h2>
+            <p>Recibiras alertas de seguimientos proximos/vencidos y recordatorios de citas. <strong>No las ignores</strong> — en cobranza, la puntualidad es clave.</p>
+        </div>
+
+        <!-- 9. DOCUMENTOS -->
+        <div class="section" id="documentos">
+            <h2><span class="num">9</span> Documentos</h2>
+            <p class="nav-path">Detalle del Cliente <span class="arrow">&rarr;</span> <span class="current">Documentos</span></p>
+
+            <p>Sube comprobantes de pago y documentos de cobranza por cliente: <strong>JPG, PNG, PDF, DOC/DOCX</strong> (maximo 10 MB).</p>
+
+            <h3>Documentos sensibles</h3>
+            <p>Los documentos sensibles (<span class="badge red">CURP</span> <span class="badge red">NSS</span> <span class="badge red">INE</span> <span class="badge red">AFORE</span> <span class="badge red">CLABE</span> <span class="badge red">Estado de cuenta</span>) requieren aprobacion del supervisor para descargar.</p>
+
+            <h3>Solicitar descarga</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Click en "Solicitar Descarga"</h4><p>Junto al documento sensible.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Escribe el motivo</h4><p>Indica por que necesitas el documento.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Espera aprobacion (24h de validez)</h4><p>Tu supervisor revisara la solicitud.</p></div></div>
+            </div>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>Sube los <strong>comprobantes de pago</strong> inmediatamente para mantener el registro de cobranza completo y verificable.</div>
+            </div>
+        </div>
+
+        <!-- 10. RECORDATORIOS -->
+        <div class="section" id="recordatorios">
+            <h2><span class="num">10</span> Recordatorios Automaticos de Cobranza</h2>
+
+            <p>El sistema envia <strong>recordatorios automaticos por WhatsApp</strong> a los clientes con pagos proximos:</p>
+
+            <table class="field-table">
+                <thead><tr><th>Tipo</th><th>Cuando se envia</th></tr></thead>
+                <tbody>
+                    <tr><td>Clientes CON plan de pagos</td><td>3, 7 y 15 dias <strong>antes</strong> de la fecha del abono programado</td></tr>
+                    <tr><td>Clientes SIN plan de pagos</td><td>3, 7 y 15 dias <strong>despues</strong> de la creacion de la cuenta</td></tr>
+                    <tr><td>Abonos vencidos</td><td>Diario a las 6:00 AM se marcan como <span class="badge red">vencido</span> automaticamente</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box note">
+                <span class="icon">&#128221;</span>
+                <div><strong>No necesitas enviar recordatorios manuales</strong> para pagos proximos — el sistema lo hace por ti. Enfocate en el seguimiento de cuentas vencidas y en cerrar acuerdos de pago.</div>
+            </div>
+        </div>
+
+        <!-- 11. PWA -->
+        <div class="section" id="pwa">
+            <h2><span class="num">11</span> Notificaciones Push (PWA)</h2>
+
+            <p>Instala CrearcoCRM como aplicacion en tu celular para recibir <strong>notificaciones push</strong> de nuevos mensajes de WhatsApp de tus clientes de cobranza.</p>
+
+            <h3>Como instalar</h3>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Chrome en tu celular</h4><p>Abre <strong>crearcocrm.socialmindcrm.com</strong>.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Instalar</h4><p>Menu (tres puntos) &rarr; <strong>"Instalar aplicacion"</strong> o <strong>"Agregar a pantalla de inicio"</strong>.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Permitir notificaciones</h4><p>Acepta el permiso cuando aparezca.</p></div></div>
+            </div>
+
+            <p>Las notificaciones funcionan <strong>incluso con el navegador cerrado</strong>.</p>
+        </div>
+
+        <!-- 12 -->
+        <div class="section" id="perfil">
+            <h2><span class="num">12</span> Perfil</h2>
+            <p>Menu superior derecho &rarr; tu nombre. Actualiza nombre, correo y contrasena.</p>
+        </div>
+
+        <!-- 13 -->
+        <div class="section" id="buenas-practicas">
+            <h2><span class="num">13</span> Buenas Practicas para Cobranza</h2>
+            <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Empieza cada dia revisando seguimientos vencidos</h4><p>Tu Dashboard te los muestra al entrar. Atendelos antes que cualquier otra cosa.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Documenta CADA compromiso de pago</h4><p>En observaciones registra: fecha comprometida, monto, metodo de pago, y si fue verbal o por escrito.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Registra siempre la fecha de pago acordada</h4><p>Si el cliente dice "pago el viernes", anotalo con fecha exacta en las observaciones.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-content"><h4>Envia recordatorio 1-2 dias antes del vencimiento</h4><p>Un WhatsApp amable el dia previo al pago aumenta significativamente la probabilidad de cobro.</p></div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-content"><h4>Manten tono profesional siempre</h4><p>Firme pero respetuoso. El objetivo es cobrar Y mantener la relacion.</p></div></div>
+                <div class="step"><div class="step-num">6</div><div class="step-content"><h4>Actualiza el estatus cuando se cobra</h4><p>Cambia a "completado" cuando el pago se confirma. No lo dejes pendiente.</p></div></div>
+                <div class="step"><div class="step-num">7</div><div class="step-content"><h4>Si no puedes contactar al cliente despues de 3 intentos</h4><p>Registralo en observaciones e informa a tu Supervisor para escalar el caso.</p></div></div>
+            </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="section" id="restricciones">
+            <h2><span class="num">14</span> Lo que NO puedes hacer</h2>
+            <table class="field-table">
+                <thead><tr><th>Funcion restringida</th><th>Quien la tiene</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Crear clientes nuevos</strong></td><td>Ventas, Posventa, Supervisor, Administrador</td></tr>
+                    <tr><td>Ver clientes de otros agentes</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Eliminar clientes</td><td>Administrador</td></tr>
+                    <tr><td>Exportar datos</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Ver reportes y metas</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Transferir conversaciones</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Configurar WhatsApp</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Envio masivo</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Administrar usuarios</td><td>Administrador</td></tr>
+                    <tr><td>Gestionar catalogos</td><td>Administrador</td></tr>
+                    <tr><td>Importar datos</td><td>Administrador</td></tr>
+                    <tr><td>Descargar documentos sensibles sin aprobacion</td><td>Supervisor / Administrador</td></tr>
+                    <tr><td>Modificar calendario de recordatorios automaticos</td><td>Administrador</td></tr>
+                    <tr><td>Gestionar apoyo entre sucursales</td><td>Supervisor / Administrador</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box tip">
+                <span class="icon">&#128161;</span>
+                <div>La diferencia principal con Ventas y Posventa es que tu <strong>no creas clientes</strong>. Los clientes te son asignados. Tu trabajo empieza cuando recibes el caso.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="manual-footer">
+        <span>CrearcoCRM v2.0 — SocialMind CRM</span>
+        <span>Marzo 2026</span>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "posventa-whatsapp",
+  "version": "1.0.0",
+  "description": "WhatsApp Bridge for Posventa CRM using Baileys",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "express": "^4.21.2",
+    "ioredis": "^5.4.2",
+    "qrcode": "^1.5.4",
+    "winston": "^3.17.0",
+    "pino": "^9.6.0",
+    "mime-types": "^2.1.35"
+  }
+}
